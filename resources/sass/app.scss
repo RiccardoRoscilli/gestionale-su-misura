@@ -1,0 +1,164 @@
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Custom variables
+:root {
+  --bs-primary: #0d6efd;
+  --bs-success: #198754;
+  --bs-warning: #fd7e14;
+  --bs-font-sans-serif: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+// Custom styles
+body {
+  font-family: var(--bs-font-sans-serif);
+}
+
+// Hero section styles
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 100px 0;
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    
+    @media (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+}
+
+// Problem/Solution section
+.problem-solution {
+  padding: 80px 0;
+  
+  .feature-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Demo section
+.demo-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  
+  .demo-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+  }
+}
+
+// Lead form
+.lead-form {
+  padding: 80px 0;
+  
+  .form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+}
+
+// Footer
+.footer {
+  background-color: #212529;
+  color: white;
+  padding: 40px 0 20px;
+  
+  a {
+    color: #adb5bd;
+    text-decoration: none;
+    
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+// Admin dashboard
+.admin-sidebar {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  
+  .nav-link {
+    color: #495057;
+    padding: 0.75rem 1rem;
+    
+    &:hover, &.active {
+      background-color: #e9ecef;
+      color: var(--bs-primary);
+    }
+    
+    i {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.stats-card {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// Utilities
+.text-gradient {
+  background: linear-gradient(135deg, var(--bs-primary), var(--bs-success));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// Animations
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+// Loading states
+.btn-loading {
+  position: relative;
+  
+  .spinner-border {
+    width: 1rem;
+    height: 1rem;
+  }
+}
