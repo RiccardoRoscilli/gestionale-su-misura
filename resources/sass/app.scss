@@ -73,6 +73,88 @@ body {
   }
 }
 
+// Pricing section
+.pricing-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  
+  .pricing-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing-breakdown {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--bs-primary);
+    
+    .d-flex {
+      font-size: 0.95rem;
+    }
+    
+    hr {
+      border-color: #dee2e6;
+      margin: 15px 0;
+    }
+  }
+  
+  .hosting-tier {
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    border: 2px solid #e9ecef;
+    transition: all 0.3s ease;
+    height: 100%;
+    
+    &:hover {
+      border-color: var(--bs-primary);
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .price-tag {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--bs-primary);
+      margin: 10px 0;
+    }
+    
+    ul li {
+      padding: 5px 0;
+      font-size: 0.9rem;
+    }
+  }
+  
+  .tco-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+    height: 100%;
+    
+    .tco-breakdown {
+      margin-top: 15px;
+      
+      .d-flex {
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+      }
+      
+      hr {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
 // Lead form
 .lead-form {
   padding: 80px 0;
@@ -160,5 +242,164 @@ body {
   .spinner-border {
     width: 1rem;
     height: 1rem;
+  }
+}
+
+// Tooltip Styles
+.tooltip {
+  font-size: 0.875rem;
+  
+  .tooltip-inner {
+    max-width: 300px;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--dark-color);
+    border-radius: var(--border-radius);
+  }
+}
+
+// MVP tooltip specific styling
+.mvp-tooltip {
+  cursor: help;
+  color: var(--primary-color);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+  
+  &:hover {
+    color: var(--primary-color);
+    text-decoration-color: var(--primary-color);
+  }
+}
+
+// Additional responsive utilities
+@media (max-width: 768px) {
+  .tooltip {
+    font-size: 0.8rem;
+    
+    .tooltip-inner {
+      max-width: 250px;
+      padding: 0.4rem 0.6rem;
+    }
+  }
+}
+
+// Cookie Consent
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 0;
+  z-index: 9999;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+  
+  &.show {
+    transform: translateY(0);
+  }
+  
+  &.fade-out {
+    transform: translateY(100%);
+  }
+  
+  .cookie-content {
+    h6 {
+      color: white;
+      font-weight: 600;
+    }
+    
+    p {
+      margin-bottom: 0;
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+    
+    a {
+      color: white;
+      text-decoration: underline;
+      
+      &:hover {
+        color: #f8f9fa;
+      }
+    }
+  }
+  
+  .cookie-buttons {
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 500;
+      
+      &.btn-outline-light {
+        border-color: rgba(255, 255, 255, 0.5);
+        
+        &:hover {
+          background-color: white;
+          color: #667eea;
+          border-color: white;
+        }
+      }
+      
+      &.btn-light {
+        &:hover {
+          background-color: #f8f9fa;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cookie-buttons {
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+}
+
+// WhatsApp Link
+.whatsapp-link {
+  color: #25d366 !important;
+  font-weight: 500;
+  
+  &:hover {
+    color: #128c7e !important;
+    text-decoration: none;
+  }
+}
+
+.social-links {
+  a {
+    color: #adb5bd;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: white;
+    }
+    
+    .fa-whatsapp:hover {
+      color: #25d366;
+    }
+    
+    .fa-envelope:hover {
+      color: #007bff;
+    }
+  }
+}
+
+// Legal pages
+.legal-page {
+  .card-header {
+    border-bottom: none;
+  }
+  
+  .accordion-button {
+    &:not(.collapsed) {
+      background-color: rgba(var(--bs-primary-rgb), 0.1);
+      color: var(--bs-primary);
+    }
   }
 }

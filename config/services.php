@@ -15,11 +15,7 @@ return [
     */
 
     'postmark' => [
-        'key' => env('POSTMARK_API_KEY'),
-    ],
-
-    'resend' => [
-        'key' => env('RESEND_API_KEY'),
+        'token' => env('POSTMARK_TOKEN'),
     ],
 
     'ses' => [
@@ -28,11 +24,31 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'resend' => [
+        'key' => env('RESEND_KEY'),
+    ],
+
     'slack' => [
         'notifications' => [
             'bot_user_oauth_token' => env('SLACK_BOT_USER_OAUTH_TOKEN'),
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Task Manager Integration
+    |--------------------------------------------------------------------------
+    |
+    | Configuration for integrating with the task management system
+    | to automatically create tickets from website leads.
+    |
+    */
+
+    'task_manager' => [
+        'url' => env('TASK_MANAGER_URL', 'http://localhost:8001'),
+        'api_key' => env('TASK_MANAGER_API_KEY'),
+        'timeout' => env('TASK_MANAGER_TIMEOUT', 30),
     ],
 
 ];
