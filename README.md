@@ -1,59 +1,276 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏢 Gestionale Su Misura - Custom Business Management Platform
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-11.x-red.svg)](https://laravel.com)
+[![PHP](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple.svg)](https://getbootstrap.com)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-## About Laravel
+Una piattaforma completa per la creazione di gestionali personalizzati per aziende italiane. Sviluppo rapido con AI, prezzi trasparenti e hosting incluso.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ Caratteristiche Principali
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 🎯 Per le Aziende
+- **Gestionali Su Misura**: Solo le funzioni che servono davvero
+- **Sviluppo Rapido**: Prototipo in 48h con intelligenza artificiale
+- **Prezzi Trasparenti**: €10 per credito, nessun costo nascosto
+- **Demo Gratuite**: 4 applicazioni demo sempre disponibili
+- **Hosting Incluso**: Piani da €20/mese con tutto incluso
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🛠️ Tecnologie
+- **Backend**: Laravel 11 con architettura moderna
+- **Frontend**: Bootstrap 5 responsive
+- **Database**: MySQL con migrazioni automatiche
+- **Integrazione**: API REST per sistemi esterni
+- **Sicurezza**: GDPR compliant, SSL incluso
 
-## Learning Laravel
+### 📱 Demo Applications
+1. **Gestionale Pulizie** - Sistema completo per aziende di pulizie
+2. **Gestionale E-commerce** - Integrazione Magento/Shopify
+3. **Gestionale Cantieri** - Gestione cantieri edili
+4. **Gestionale Bandi** - Sistema per bandi pubblici
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🚀 Installazione Rapida
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Prerequisiti
+- PHP 8.2+
+- Composer
+- MySQL/MariaDB
+- Node.js & NPM
 
-## Laravel Sponsors
+### Setup
+```bash
+# Clona il repository
+git clone git@github.com:RiccardoRoscilli/gestionale-su-misura.git
+cd gestionale-su-misura
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+# Installa dipendenze
+composer install
+npm install
 
-### Premium Partners
+# Configura environment
+cp .env.example .env
+php artisan key:generate
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+# Setup database
+php artisan migrate
+php artisan db:seed
 
-## Contributing
+# Compila assets
+npm run build
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+# Avvia il server
+php artisan serve
+```
 
-## Code of Conduct
+Visita `http://localhost:8000` per iniziare!
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 💰 Modello di Business
 
-## Security Vulnerabilities
+### Sviluppo (Una Tantum)
+- **Sistema Base**: 62 crediti × €10 = **€620**
+- **Personalizzazioni**: Crediti aggiuntivi in base alle esigenze
+- **Prototipo**: 48 ore per la prima versione funzionante
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Hosting (Mensile)
+| Piano | Prezzo | Utenti | Caratteristiche |
+|-------|--------|--------|-----------------|
+| **Base** | €20/mese | Fino a 5 | Database MySQL, SSL, Backup giornalieri |
+| **Professionale** | €35/mese | Fino a 20 | Storage avanzato, Performance ottimizzate |
+| **Enterprise** | €50/mese | Illimitati | Server dedicato, Supporto 24/7 |
 
-## License
+### Confronto TCO (3 anni)
+- **Gestionale Su Misura**: €1.340-2.420 (tutto incluso)
+- **Software Standard**: €3.600-14.400 (2 utenti)
+- **Sviluppo Tradizionale**: €18.000+ (solo per iniziare)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🎨 Funzionalità Website
+
+### Landing Page Professionale
+- **Design Moderno**: Bootstrap 5 con animazioni CSS
+- **Responsive**: Ottimizzato per tutti i dispositivi
+- **SEO Optimized**: Meta tags e struttura ottimizzata
+- **Performance**: Caricamento veloce e ottimizzato
+
+### Sistema Lead Management
+- **Form Contatti**: Raccolta lead automatica
+- **Integrazione CRM**: Connessione con sistema task management
+- **Email Automatiche**: Conferme e notifiche
+- **Tracking**: UTM e analytics integrati
+
+### Compliance GDPR
+- **Cookie Consent**: Banner intelligente con scelte utente
+- **Privacy Policy**: Completa e aggiornata
+- **Cookie Policy**: Dettagliata con istruzioni browser
+- **Terms of Service**: Condizioni complete del servizio
+
+### Demo System
+- **4 Applicazioni Demo**: Sempre disponibili per test
+- **Reset Automatico**: Database pulito ogni notte
+- **Credenziali Facilitate**: Login automatico per demo
+- **Banda Demo**: Sempre visibile durante i test
+
+## 🔧 Architettura Tecnica
+
+### Backend Structure
+```
+app/
+├── Http/Controllers/
+│   ├── LeadController.php          # Gestione lead e form contatti
+│   └── LegalController.php         # Pagine legali (privacy, terms)
+├── Services/
+│   └── TaskManagerService.php     # Integrazione sistema task
+├── Console/Commands/
+│   └── ResetDemoDatabase.php      # Reset automatico demo
+└── Models/
+    └── Lead.php                   # Modello lead con tracking
+```
+
+### Frontend Structure
+```
+resources/views/
+├── homepage.blade.php             # Landing page principale
+├── components/
+│   ├── cookie-consent.blade.php   # Banner cookie GDPR
+│   ├── demo-login-info.blade.php  # Info login demo
+│   ├── seo-meta.blade.php         # Meta tags SEO
+│   └── analytics.blade.php        # Google Analytics
+├── privacy.blade.php              # Privacy policy
+├── cookies.blade.php              # Cookie policy
+└── terms.blade.php                # Terms of service
+```
+
+### Integrations
+- **Task Manager API**: Creazione automatica ticket da lead
+- **Google Analytics**: Tracking con consenso cookie
+- **WhatsApp Business**: Integrazione chat diretta
+- **Email System**: Notifiche automatiche
+
+## 📊 Analytics & Tracking
+
+### Lead Tracking
+- **Sorgenti**: Website, social, referral
+- **UTM Parameters**: Campaign, medium, source
+- **Conversioni**: Form submission to ticket creation
+- **Performance**: Response times e success rates
+
+### Demo Usage
+- **Accessi**: Tracking utilizzo demo applications
+- **Funzionalità**: Most used features
+- **Feedback**: User behavior analysis
+- **Conversioni**: Demo to lead conversion
+
+## 🛡️ Sicurezza
+
+### Data Protection
+- **GDPR Compliance**: Completa conformità europea
+- **SSL Encryption**: Certificati inclusi in tutti i piani
+- **Database Security**: Backup crittografati
+- **Access Control**: Autenticazione multi-livello
+
+### Privacy Features
+- **Cookie Management**: Controllo granulare utente
+- **Data Minimization**: Solo dati necessari
+- **Right to Erasure**: Cancellazione su richiesta
+- **Transparency**: Informazioni chiare su uso dati
+
+## 🚀 Deployment
+
+### Production Setup
+```bash
+# Ottimizzazioni produzione
+composer install --optimize-autoloader --no-dev
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+
+# Setup cron per demo reset
+./setup-demo-cron.sh
+
+# SSL e sicurezza
+# Configurare SSL certificate
+# Impostare firewall rules
+# Configurare backup automatici
+```
+
+### Environment Variables
+```env
+APP_NAME="Gestionale Su Misura"
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=https://gestionale-su-misura.it
+
+# Database
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_DATABASE=gestionale_su_misura
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+
+# Task Manager Integration
+TASK_MANAGER_URL=https://task-manager.example.com
+TASK_MANAGER_API_KEY=your_secure_api_key
+
+# Analytics
+GOOGLE_ANALYTICS_ID=GA_MEASUREMENT_ID
+```
+
+## 📈 Business Metrics
+
+### Key Performance Indicators
+- **Lead Generation**: Form submissions per month
+- **Conversion Rate**: Lead to customer conversion
+- **Demo Usage**: Active demo sessions
+- **Customer Satisfaction**: Support ticket resolution time
+
+### Revenue Tracking
+- **Development Revenue**: Credits sold per month
+- **Hosting Revenue**: Monthly recurring revenue
+- **Customer Lifetime Value**: Average customer value
+- **Churn Rate**: Customer retention metrics
+
+## 🤝 Integrazione Task Manager
+
+### API Integration
+- **Endpoint**: `POST /api/leads/create`
+- **Authentication**: API key based
+- **Data Flow**: Lead → Customer → Request
+- **Error Handling**: Graceful degradation
+
+### Workflow Automation
+1. **Lead Submission**: User compila form website
+2. **Data Validation**: Controllo dati e spam protection
+3. **Ticket Creation**: Creazione automatica ticket
+4. **Customer Management**: Gestione anagrafica cliente
+5. **Follow-up**: Email automatiche e tracking
+
+## 📞 Contatti Business
+
+### PromoWeb Studio
+- **Ragione Sociale**: PromoWeb Studio di R. Roscilli
+- **Indirizzo**: Via Molfetta 24, 00171 Roma
+- **P.IVA**: 10587780585
+- **WhatsApp**: +39 328 291 4852
+- **Email**: info@gestionale-su-misura.it
+
+### Canali di Supporto
+- **WhatsApp Business**: Chat diretta per supporto immediato
+- **Email**: Supporto formale e documentazione
+- **Demo**: Test gratuito delle funzionalità
+- **Consulenza**: Analisi esigenze personalizzata
+
+## 📄 Licenza
+
+Questo progetto è rilasciato sotto licenza MIT. Vedi il file `LICENSE` per i dettagli.
+
+## 🎉 Ringraziamenti
+
+- Laravel Framework per l'eccellente architettura
+- Bootstrap per il framework CSS responsive
+- Comunità open source per i contributi
+- Clienti che hanno testato e migliorato il sistema
+
+---
+
+**Gestionale Su Misura** - Trasforma le tue esigenze in software personalizzato! 🚀
+
+Made with ❤️ in Italy
