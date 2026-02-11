@@ -10,6 +10,11 @@ Route::get('/', function () {
 
 Route::post('/leads', [LeadController::class, 'store'])->name('leads.store');
 
+// Demo pages
+Route::get('/demo/pulizie', function () {
+    return view('demo.pulizie');
+})->name('demo.pulizie');
+
 // Legal pages
 Route::get('/privacy', [LegalController::class, 'privacy'])->name('privacy');
 Route::get('/cookies', [LegalController::class, 'cookies'])->name('cookies');

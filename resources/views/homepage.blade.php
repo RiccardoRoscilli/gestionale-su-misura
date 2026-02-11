@@ -126,12 +126,11 @@
                             <li><i class="fas fa-check text-success me-1"></i> Pianificazione interventi</li>
                             <li><i class="fas fa-check text-success me-1"></i> Inventario materiali</li>
                         </ul>
-                        <a href="https://pulizie-demo.gestionale-su-misura.com" 
-                           target="_blank" 
+                        <a href="{{ route('demo.pulizie') }}" 
                            class="btn btn-primary w-100"
                            data-demo-type="pulizie">
-                            <i class="fas fa-external-link-alt me-2"></i>
-                            Prova la Demo
+                            <i class="fas fa-info-circle me-2"></i>
+                            Scopri la Demo
                         </a>
                     </div>
                 </div>
