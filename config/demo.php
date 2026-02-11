@@ -47,7 +47,7 @@ return [
         'pulizie' => [
             'name' => 'Gestionale Pulizie',
             'description' => 'Sistema completo per la gestione di aziende di pulizie',
-            'url' => 'https://pulizie-demo.gestionale-su-misura.it',
+            'url' => 'https://pulizie-demo.gestionale-su-misura.com',
             'features' => [
                 'Gestione clienti e sedi',
                 'Pianificazione interventi',
