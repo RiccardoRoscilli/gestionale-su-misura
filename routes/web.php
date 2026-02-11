@@ -15,6 +15,10 @@ Route::get('/demo/pulizie', function () {
     return view('demo.pulizie');
 })->name('demo.pulizie');
 
+Route::get('/demo/bandi', function () {
+    return view('demo.bandi');
+})->name('demo.bandi');
+
 // Legal pages
 Route::get('/privacy', [LegalController::class, 'privacy'])->name('privacy');
 Route::get('/cookies', [LegalController::class, 'cookies'])->name('cookies');

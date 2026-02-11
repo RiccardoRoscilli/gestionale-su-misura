@@ -209,12 +209,11 @@
                             <li><i class="fas fa-check text-success me-1"></i> Gestione scadenze</li>
                             <li><i class="fas fa-check text-success me-1"></i> Tracking partecipazioni</li>
                         </ul>
-                        <a href="https://bandi-demo.gestionale-su-misura.it" 
-                           target="_blank" 
+                        <a href="{{ route('demo.bandi') }}" 
                            class="btn btn-info w-100"
                            data-demo-type="bandi">
-                            <i class="fas fa-external-link-alt me-2"></i>
-                            Prova la Demo
+                            <i class="fas fa-info-circle me-2"></i>
+                            Scopri la Demo
                         </a>
                     </div>
                 </div>

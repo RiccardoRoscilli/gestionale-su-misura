@@ -83,7 +83,7 @@ return [
         'bandi' => [
             'name' => 'Gestionale Bandi',
             'description' => 'Sistema per la gestione di bandi e gare pubbliche',
-            'url' => 'https://bandi-demo.gestionale-su-misura.it',
+            'url' => 'https://bandi-demo.gestionale-su-misura.com',
             'features' => [
                 'Ricerca bandi',
                 'Gestione scadenze',
