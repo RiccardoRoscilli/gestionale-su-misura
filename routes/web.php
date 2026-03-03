@@ -15,6 +15,14 @@ Route::get('/demo/pulizie', function () {
     return view('demo.pulizie');
 })->name('demo.pulizie');
 
+Route::get('/demo/task', function () {
+    return view('demo.task');
+})->name('demo.task');
+
+Route::get('/demo/menu', function () {
+    return view('demo.menu');
+})->name('demo.menu');
+
 Route::get('/demo/bandi', function () {
     return view('demo.bandi');
 })->name('demo.bandi');

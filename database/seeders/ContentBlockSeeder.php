@@ -22,7 +22,7 @@ class ContentBlockSeeder extends Seeder
             [
                 'key' => 'hero_subtitle',
                 'title' => 'Sottotitolo Hero Section',
-                'content' => 'Software personalizzato per PMI. Sviluppo rapido con AI. Da 10€ per funzionalità.',
+                'content' => 'Software personalizzato per PMI. Sviluppo rapido con AI.',
                 'is_active' => true,
             ],
             [

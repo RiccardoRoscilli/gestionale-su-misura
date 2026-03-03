@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('title', 'Gestionale Su Misura - Software Personalizzato per PMI')
-@section('description', 'Sostituisci Excel con un gestionale su misura. Software personalizzato per PMI con sviluppo rapido tramite AI. Da 10€ per funzionalità.')
+@section('description', 'Sostituisci Excel con un gestionale su misura. Software personalizzato per PMI con sviluppo rapido tramite AI.')
 @section('keywords', 'gestionale personalizzato, software PMI, AI, automazione, Excel, gestionale aziendale')
 
 @section('content')
@@ -15,7 +15,7 @@
                         {{ \App\Models\ContentBlock::getContent('hero_title', 'Sostituisci Excel con un Gestionale Su Misura') }}
                     </h1>
                     <p class="hero-subtitle">
-                        {{ \App\Models\ContentBlock::getContent('hero_subtitle', 'Software personalizzato per PMI. Sviluppo rapido con AI. Da 10€ per funzionalità.') }}
+                        {{ \App\Models\ContentBlock::getContent('hero_subtitle', 'Software personalizzato per PMI. Sviluppo rapido con AI.') }}
                     </p>
                     <div class="d-flex flex-column flex-sm-row gap-3">
                         <a href="#preventivo" class="btn btn-primary btn-lg">
@@ -136,57 +136,55 @@
                 </div>
             </div>
 
-            <!-- Demo E-commerce -->
+            <!-- Demo Gestione Task -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card demo-card h-100">
                     <div class="demo-image" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);"></div>
                     <div class="card-body">
                         <h5 class="card-title fw-bold">
-                            <i class="fas fa-shopping-cart me-2 text-success"></i>
-                            Gestionale E-commerce
+                            <i class="fas fa-tasks me-2 text-success"></i>
+                            Gestione Task
                         </h5>
                         <p class="card-text">
-                            Integrazione con Magento/Shopify per gestione ordini e magazzino.
+                            Sistema completo per gestione progetti, task e collaborazione team.
                         </p>
                         <ul class="list-unstyled small text-muted mb-3">
-                            <li><i class="fas fa-check text-success me-1"></i> Sincronizzazione ordini</li>
-                            <li><i class="fas fa-check text-success me-1"></i> Gestione magazzino</li>
-                            <li><i class="fas fa-check text-success me-1"></i> Tracking spedizioni</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Gestione progetti</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Assegnazione task</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Tracking avanzamento</li>
                         </ul>
-                        <a href="https://ordini-demo.gestionale-su-misura.it" 
-                           target="_blank" 
+                        <a href="{{ route('demo.task') }}" 
                            class="btn btn-success w-100"
-                           data-demo-type="ordini">
-                            <i class="fas fa-external-link-alt me-2"></i>
-                            Prova la Demo
+                           data-demo-type="task">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Scopri la Demo
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- Demo Cantieri -->
+            <!-- Demo Menu Ristorante -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card demo-card h-100">
                     <div class="demo-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
                     <div class="card-body">
                         <h5 class="card-title fw-bold">
-                            <i class="fas fa-hard-hat me-2 text-warning"></i>
-                            Gestionale Cantieri
+                            <i class="fas fa-utensils me-2 text-warning"></i>
+                            Menu Ristorante
                         </h5>
                         <p class="card-text">
-                            Sistema per gestione cantieri e progetti edili con controllo costi.
+                            Sistema per digitalizzare il menu: carica PDF, genera QR code, clienti visualizzano.
                         </p>
                         <ul class="list-unstyled small text-muted mb-3">
-                            <li><i class="fas fa-check text-success me-1"></i> Gestione progetti</li>
-                            <li><i class="fas fa-check text-success me-1"></i> Controllo costi</li>
-                            <li><i class="fas fa-check text-success me-1"></i> Pianificazione risorse</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Carica menu PDF</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Genera QR code</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Visualizzazione mobile</li>
                         </ul>
-                        <a href="https://cantieri-demo.gestionale-su-misura.it" 
-                           target="_blank" 
+                        <a href="{{ route('demo.menu') }}" 
                            class="btn btn-warning w-100"
-                           data-demo-type="cantieri">
-                            <i class="fas fa-external-link-alt me-2"></i>
-                            Prova la Demo
+                           data-demo-type="menu">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Scopri la Demo
                         </a>
                     </div>
                 </div>

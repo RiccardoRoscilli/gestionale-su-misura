@@ -8,7 +8,7 @@
     <title>@yield('title', config('app.name', 'Gestionale Su Misura'))</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="@yield('description', 'Software gestionale personalizzato per PMI. Sviluppo rapido con AI. Da 10€ per funzionalità.')">
+    <meta name="description" content="@yield('description', 'Software gestionale personalizzato per PMI. Sviluppo rapido con AI.')">
     <meta name="keywords" content="@yield('keywords', 'gestionale, software personalizzato, PMI, AI, automazione, Excel')">
     <meta name="author" content="Gestionale Su Misura">
     

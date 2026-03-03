@@ -1,5 +1,5 @@
 <!-- SEO Meta Tags -->
-<meta name="description" content="{{ $description ?? 'Software gestionale personalizzato per PMI. Sviluppo rapido con AI. Da 10€ per funzionalità.' }}">
+<meta name="description" content="{{ $description ?? 'Software gestionale personalizzato per PMI. Sviluppo rapido con AI.' }}">
 <meta name="keywords" content="{{ $keywords ?? 'gestionale, software personalizzato, PMI, AI, automazione, Excel' }}">
 <meta name="author" content="Gestionale Su Misura">
 <meta name="robots" content="index, follow">
