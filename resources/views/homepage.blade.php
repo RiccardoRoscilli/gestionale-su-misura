@@ -252,254 +252,137 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h2 class="fw-bold mb-3">Prezzi Trasparenti e Accessibili</h2>
-                <p class="text-muted fs-5">Modello a crediti: paghi solo per le funzionalità che usi</p>
+                <h2 class="fw-bold mb-3">Il Tuo Gestionale in Settimane, Non in Mesi</h2>
+                <p class="text-muted fs-5">Prezzo fisso, data di consegna garantita. Se sforiamo, paghiamo noi.</p>
             </div>
         </div>
-        
+
         <div class="row justify-content-center">
             <div class="col-lg-10">
-                <!-- Pricing Model Explanation -->
-                <div class="row mb-5">
+                <!-- Timeline -->
+                <div class="row mb-5 text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="pricing-icon mb-3">
+                            <i class="fas fa-bolt fa-3x text-warning"></i>
+                        </div>
+                        <h4 class="fw-bold">48 ore</h4>
+                        <p class="text-muted">Ci racconti come lavori: entro 48 ore hai un <strong>prototipo funzionante gratuito</strong> con i tuoi dati di esempio. Se non ti convince, non paghi nulla.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="pricing-icon mb-3">
+                            <i class="fas fa-calendar-check fa-3x text-primary"></i>
+                        </div>
+                        <h4 class="fw-bold">Data garantita</h4>
+                        <p class="text-muted">Prezzo fisso e data di consegna scritta nel contratto. Vedi i progressi ogni settimana, non a fine progetto.</p>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="pricing-icon mb-3">
+                            <i class="fas fa-rocket fa-3x text-success"></i>
+                        </div>
+                        <h4 class="fw-bold">2–8 settimane</h4>
+                        <p class="text-muted">Grazie all'AI consegniamo in settimane quello che uno sviluppo tradizionale fa in 3–6 mesi.</p>
+                    </div>
+                </div>
+
+                <!-- Packages -->
+                <div class="row mb-4">
                     <div class="col-lg-4 mb-4">
-                        <div class="text-center">
-                            <div class="pricing-icon mb-3">
-                                <i class="fas fa-coins fa-3x text-primary"></i>
-                            </div>
-                            <h4 class="fw-bold">Sistema a Crediti</h4>
-                            <p class="text-muted">Ogni credito costa <strong>10€</strong>. Paghi solo per le funzionalità sviluppate, niente costi fissi mensili.</p>
+                        <div class="hosting-tier basic h-100 text-center">
+                            <i class="fas fa-seedling fa-3x text-primary mb-3"></i>
+                            <h5 class="fw-bold">Start</h5>
+                            <div class="price-tag">€2.900</div>
+                            <p class="fw-bold text-primary mb-0"><i class="fas fa-clock me-1"></i>Consegna in 2 settimane</p>
+                            <ul class="list-unstyled mt-3 text-start">
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Fino a 3 moduli</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Es. anagrafiche, calendario, report</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Utenti con ruoli e permessi</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Mobile-friendly</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Importazione dati da Excel</li>
+                            </ul>
+                            <small class="text-muted">Per chi vuole uscire da Excel subito</small>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
-                        <div class="text-center">
-                            <div class="pricing-icon mb-3">
-                                <i class="fas fa-calculator fa-3x text-success"></i>
-                            </div>
-                            <h4 class="fw-bold">Stima Precisa</h4>
-                            <p class="text-muted">Ricevi una stima dettagliata dei crediti necessari prima di iniziare. Nessuna sorpresa.</p>
+                        <div class="hosting-tier professional h-100 text-center border border-2 border-warning">
+                            <span class="badge bg-warning text-dark mb-2">Il più scelto</span><br>
+                            <i class="fas fa-briefcase fa-3x text-warning mb-3"></i>
+                            <h5 class="fw-bold">Business</h5>
+                            <div class="price-tag">€5.900</div>
+                            <p class="fw-bold text-warning mb-0"><i class="fas fa-clock me-1"></i>Consegna in 4 settimane</p>
+                            <ul class="list-unstyled mt-3 text-start">
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Fino a 8 moduli</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Integrazioni: fatturazione elettronica, e-commerce, corrieri</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Dashboard e report avanzati</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Documenti PDF automatici</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Formazione del personale</li>
+                            </ul>
+                            <small class="text-muted">Per PMI con processi strutturati</small>
                         </div>
                     </div>
                     <div class="col-lg-4 mb-4">
-                        <div class="text-center">
-                            <div class="pricing-icon mb-3">
-                                <i class="fas fa-rocket fa-3x text-warning"></i>
-                            </div>
-                            <h4 class="fw-bold">Sviluppo Rapido</h4>
-                            <p class="text-muted">Grazie all'AI, sviluppiamo in ore quello che prima richiedeva settimane.</p>
+                        <div class="hosting-tier enterprise h-100 text-center">
+                            <i class="fas fa-industry fa-3x text-danger mb-3"></i>
+                            <h5 class="fw-bold">ERP</h5>
+                            <div class="price-tag">da €9.900</div>
+                            <p class="fw-bold text-danger mb-0"><i class="fas fa-clock me-1"></i>Consegna in 6–8 settimane</p>
+                            <ul class="list-unstyled mt-3 text-start">
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Gestionale completo</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Magazzino, produzione, distinte base</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Terzisti, DDT, multi-sede</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Integrazioni con i tuoi sistemi</li>
+                                <li class="mb-1"><i class="fas fa-check text-success me-2"></i>Migrazione dati completa</li>
+                            </ul>
+                            <small class="text-muted">Per aziende che vogliono un ERP su misura</small>
                         </div>
                     </div>
                 </div>
 
-                <!-- Example Pricing -->
-                <div class="card shadow-custom mb-5">
-                    <div class="card-header bg-primary text-white text-center">
-                        <h4 class="mb-0">
-                            <i class="fas fa-broom me-2"></i>
-                            Esempio: Gestionale Pulizie
-                        </h4>
-                        <p class="mb-0 mt-2">Stima crediti per un sistema completo come la nostra demo</p>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <h5 class="fw-bold mb-3">Funzionalità Incluse:</h5>
-                                <ul class="list-unstyled">
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <strong>Gestione Clienti</strong> - Anagrafica completa con referenti</li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <strong>Gestione Sedi</strong> - Sedi multiple per cliente con dettagli</li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <strong>Pianificazione Interventi</strong> - Calendario, assegnazioni, stati</li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <strong>Gestione Operatori</strong> - Utenti con ruoli e permessi</li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <strong>Inventario Materiali</strong> - Giacenze, costi, manutenzioni</li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <strong>Dashboard e Report</strong> - Statistiche e visualizzazioni</li>
-                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i> <strong>App Mobile-Friendly</strong> - Responsive design</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="pricing-breakdown">
-                                    <h5 class="fw-bold mb-3">Stima Crediti:</h5>
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <span>Setup iniziale e autenticazione</span>
-                                        <span class="fw-bold">8 crediti</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <span>Gestione clienti e sedi</span>
-                                        <span class="fw-bold">12 crediti</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <span>Sistema interventi completo</span>
-                                        <span class="fw-bold">18 crediti</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <span>Gestione materiali e inventario</span>
-                                        <span class="fw-bold">10 crediti</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <span>Dashboard e report</span>
-                                        <span class="fw-bold">8 crediti</span>
-                                    </div>
-                                    <div class="d-flex justify-content-between mb-2">
-                                        <span>Design responsive e UX</span>
-                                        <span class="fw-bold">6 crediti</span>
-                                    </div>
-                                    <hr>
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <span class="fw-bold fs-5">Totale Crediti</span>
-                                        <span class="fw-bold fs-5 text-primary">62 crediti</span>
-                                    </div>
-                                    <div class="text-center">
-                                        <div class="alert alert-success">
-                                            <h4 class="fw-bold mb-2">
-                                                <i class="fas fa-euro-sign me-2"></i>
-                                                Costo Sviluppo: 620€
-                                            </h4>
-                                            <p class="mb-0">Costo una tantum per lo sviluppo</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Speed Guarantee -->
+                <div class="alert alert-success text-center shadow-custom mb-5 p-4">
+                    <h4 class="fw-bold mb-2"><i class="fas fa-shield-alt me-2"></i>Garanzia Velocità</h4>
+                    <p class="mb-0 fs-5">Se consegniamo in ritardo, per <strong>ogni settimana di ritardo hai un mese di hosting gratis</strong>. Una data, non una promessa.</p>
                 </div>
 
-                <!-- Hosting Costs Section -->
+                <!-- Hosting -->
                 <div class="card shadow-custom mb-5">
                     <div class="card-header bg-info text-white text-center">
-                        <h4 class="mb-0">
-                            <i class="fas fa-server me-2"></i>
-                            Costi di Hosting (Mensili)
-                        </h4>
-                        <p class="mb-0 mt-2">Costi ricorrenti per mantenere il gestionale online</p>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-4 mb-4">
-                                <div class="text-center">
-                                    <div class="hosting-tier basic">
-                                        <i class="fas fa-cloud fa-3x text-primary mb-3"></i>
-                                        <h5 class="fw-bold">Hosting Base</h5>
-                                        <div class="price-tag">€20/mese</div>
-                                        <ul class="list-unstyled mt-3">
-                                            <li><i class="fas fa-check text-success me-2"></i>Fino a 5 utenti</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Database MySQL</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>SSL incluso</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Backup giornalieri</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Supporto email</li>
-                                        </ul>
-                                        <small class="text-muted">Ideale per piccole aziende</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="text-center">
-                                    <div class="hosting-tier professional">
-                                        <i class="fas fa-server fa-3x text-warning mb-3"></i>
-                                        <h5 class="fw-bold">Hosting Professionale</h5>
-                                        <div class="price-tag">€35/mese</div>
-                                        <ul class="list-unstyled mt-3">
-                                            <li><i class="fas fa-check text-success me-2"></i>Fino a 20 utenti</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Storage file avanzato</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Performance ottimizzate</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Backup multipli</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Supporto prioritario</li>
-                                        </ul>
-                                        <small class="text-muted">Per aziende in crescita</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 mb-4">
-                                <div class="text-center">
-                                    <div class="hosting-tier enterprise">
-                                        <i class="fas fa-database fa-3x text-danger mb-3"></i>
-                                        <h5 class="fw-bold">Hosting Enterprise</h5>
-                                        <div class="price-tag">€50/mese</div>
-                                        <ul class="list-unstyled mt-3">
-                                            <li><i class="fas fa-check text-success me-2"></i>Utenti illimitati</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Archivio PDF/documenti</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Server dedicato</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Backup ridondanti</li>
-                                            <li><i class="fas fa-check text-success me-2"></i>Supporto 24/7</li>
-                                        </ul>
-                                        <small class="text-muted">Per aziende strutturate</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Total Cost of Ownership -->
-                <div class="card border-primary mb-5">
-                    <div class="card-header bg-primary text-white text-center">
-                        <h4 class="mb-0">
-                            <i class="fas fa-calculator me-2"></i>
-                            Costo Totale di Proprietà (3 anni)
-                        </h4>
+                        <h4 class="mb-0"><i class="fas fa-server me-2"></i>Hosting (Mensile)</h4>
+                        <p class="mb-0 mt-2">Separato dallo sviluppo: paghi solo le risorse che servono al tuo gestionale</p>
                     </div>
                     <div class="card-body">
                         <div class="row text-center">
                             <div class="col-md-4 mb-3">
-                                <div class="tco-card">
-                                    <h6 class="fw-bold text-primary">Configurazione Base</h6>
-                                    <div class="tco-breakdown">
-                                        <div class="d-flex justify-content-between">
-                                            <span>Sviluppo (una tantum)</span>
-                                            <span>€620</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <span>Hosting (€20 × 36 mesi)</span>
-                                            <span>€720</span>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-between fw-bold">
-                                            <span>Totale 3 anni</span>
-                                            <span class="text-primary">€1.340</span>
-                                        </div>
-                                        <small class="text-muted">€37/mese in media</small>
-                                    </div>
-                                </div>
+                                <h5 class="fw-bold">Base</h5>
+                                <div class="price-tag fs-4 fw-bold text-primary">€50/mese</div>
+                                <ul class="list-unstyled mt-3">
+                                    <li><i class="fas fa-check text-success me-2"></i>Fino a 10 utenti</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>SSL e backup giornalieri</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Aggiornamenti di sicurezza</li>
+                                </ul>
                             </div>
                             <div class="col-md-4 mb-3">
-                                <div class="tco-card">
-                                    <h6 class="fw-bold text-warning">Configurazione Professionale</h6>
-                                    <div class="tco-breakdown">
-                                        <div class="d-flex justify-content-between">
-                                            <span>Sviluppo (una tantum)</span>
-                                            <span>€620</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <span>Hosting (€35 × 36 mesi)</span>
-                                            <span>€1.260</span>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-between fw-bold">
-                                            <span>Totale 3 anni</span>
-                                            <span class="text-warning">€1.880</span>
-                                        </div>
-                                        <small class="text-muted">€52/mese in media</small>
-                                    </div>
-                                </div>
+                                <h5 class="fw-bold">Professionale</h5>
+                                <div class="price-tag fs-4 fw-bold text-primary">€75/mese</div>
+                                <ul class="list-unstyled mt-3">
+                                    <li><i class="fas fa-check text-success me-2"></i>Fino a 30 utenti</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Storage documenti esteso</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Backup multipli</li>
+                                </ul>
                             </div>
                             <div class="col-md-4 mb-3">
-                                <div class="tco-card">
-                                    <h6 class="fw-bold text-danger">Configurazione Enterprise</h6>
-                                    <div class="tco-breakdown">
-                                        <div class="d-flex justify-content-between">
-                                            <span>Sviluppo (una tantum)</span>
-                                            <span>€620</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <span>Hosting (€50 × 36 mesi)</span>
-                                            <span>€1.800</span>
-                                        </div>
-                                        <hr>
-                                        <div class="d-flex justify-content-between fw-bold">
-                                            <span>Totale 3 anni</span>
-                                            <span class="text-danger">€2.420</span>
-                                        </div>
-                                        <small class="text-muted">€67/mese in media</small>
-                                    </div>
-                                </div>
+                                <h5 class="fw-bold">Dedicato</h5>
+                                <div class="price-tag fs-4 fw-bold text-primary">€100/mese</div>
+                                <ul class="list-unstyled mt-3">
+                                    <li><i class="fas fa-check text-success me-2"></i>Utenti illimitati</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Server dedicato</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Backup ridondanti</li>
+                                </ul>
                             </div>
                         </div>
+                        <p class="text-center text-muted mb-0 mt-2">
+                            <i class="fas fa-info-circle me-1"></i>
+                            Nuove funzionalità e modifiche non sono incluse nell'hosting: le preventiviamo sempre a parte, secondo specifiche, con prezzo fisso e data di consegna.
+                        </p>
                     </div>
                 </div>
 
@@ -508,30 +391,24 @@
                     <div class="col-12">
                         <div class="card border-warning">
                             <div class="card-header bg-warning text-dark text-center">
-                                <h5 class="mb-0">
-                                    <i class="fas fa-balance-scale me-2"></i>
-                                    Confronto Costi Totali (3 anni)
-                                </h5>
+                                <h5 class="mb-0"><i class="fas fa-stopwatch me-2"></i>Quanto Tempo Ti Serve per Partire?</h5>
                             </div>
                             <div class="card-body">
                                 <div class="row text-center">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 mb-3">
                                         <h6 class="fw-bold text-danger">Software Standard</h6>
-                                        <p class="text-muted">€50-200/mese per utente<br>Funzioni che non usi<br>Personalizzazioni costose</p>
-                                        <div class="fw-bold text-danger fs-4">€3.600-14.400</div>
-                                        <small class="text-muted">3 anni, 2 utenti</small>
+                                        <p class="text-muted">Pronto subito, ma è la tua azienda<br>che deve adattarsi al software<br>Licenze per utente, per sempre</p>
+                                        <div class="fw-bold text-danger fs-4">Mesi di adattamento</div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 mb-3">
                                         <h6 class="fw-bold text-warning">Sviluppo Tradizionale</h6>
-                                        <p class="text-muted">€15.000-50.000 sviluppo<br>+ hosting + manutenzione<br>Tempi lunghi</p>
-                                        <div class="fw-bold text-warning fs-4">€18.000+</div>
-                                        <small class="text-muted">Solo sviluppo + hosting</small>
+                                        <p class="text-muted">Analisi, specifiche, sviluppo, test<br>€15.000–50.000<br>Vedi il risultato solo alla fine</p>
+                                        <div class="fw-bold text-warning fs-4">3–6 mesi</div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 mb-3">
                                         <h6 class="fw-bold text-success">Gestionale Su Misura</h6>
-                                        <p class="text-muted">Solo le funzioni che usi<br>Sviluppo rapido<br>Hosting incluso</p>
-                                        <div class="fw-bold text-success fs-4">€1.340-2.420</div>
-                                        <small class="text-muted">Tutto incluso, 3 anni</small>
+                                        <p class="text-muted">Prototipo gratis in 48 ore<br>Solo le funzioni che usi<br>Prezzo fisso, data garantita</p>
+                                        <div class="fw-bold text-success fs-4">2–8 settimane</div>
                                     </div>
                                 </div>
                             </div>

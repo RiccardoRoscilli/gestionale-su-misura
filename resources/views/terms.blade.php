@@ -48,8 +48,8 @@
                             <h5>Fase 1: Analisi</h5>
                             <ul>
                                 <li>Raccolta requisiti</li>
-                                <li>Stima crediti necessari</li>
-                                <li>Proposta commerciale</li>
+                                <li>Prototipo gratuito in 48 ore</li>
+                                <li>Proposta a prezzo fisso con data di consegna</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
@@ -64,12 +64,17 @@
 
                     <h2 class="h4 mb-3 mt-4">5. Prezzi e Pagamenti</h2>
                     <div class="alert alert-info">
-                        <h5><i class="fas fa-euro-sign me-2"></i>Sistema a Crediti</h5>
+                        <h5><i class="fas fa-euro-sign me-2"></i>Pacchetti a Prezzo Fisso</h5>
                         <ul class="mb-0">
-                            <li><strong>1 Credito = €10</strong></li>
+                            <li><strong>Start</strong>: €2.900, consegna in 2 settimane</li>
+                            <li><strong>Business</strong>: €5.900, consegna in 4 settimane</li>
+                            <li><strong>ERP</strong>: da €9.900, consegna in 6–8 settimane</li>
+                            <li>Prezzi IVA esclusa; prezzo e data di consegna definiti nella proposta commerciale</li>
+                            <li><strong>Garanzia velocità</strong>: per ogni settimana di ritardo imputabile a noi, un mese di hosting gratuito</li>
                             <li>Pagamento anticipato del 50% all'accettazione</li>
                             <li>Saldo alla consegna della demo funzionante</li>
                             <li>Hosting fatturato mensilmente</li>
+                            <li>Nuove funzionalità e modifiche successive alla consegna sono preventivate a parte, secondo specifiche</li>
                         </ul>
                     </div>
 
@@ -86,18 +91,18 @@
                             <tbody>
                                 <tr>
                                     <td><strong>Base</strong></td>
-                                    <td>€20/mese</td>
-                                    <td>Fino a 5 utenti, backup giornalieri</td>
+                                    <td>€50/mese</td>
+                                    <td>Fino a 10 utenti, SSL, backup giornalieri, aggiornamenti di sicurezza</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Professionale</strong></td>
-                                    <td>€35/mese</td>
-                                    <td>Fino a 20 utenti, storage avanzato</td>
+                                    <td>€75/mese</td>
+                                    <td>Fino a 30 utenti, storage documenti esteso, backup multipli</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Enterprise</strong></td>
-                                    <td>€50/mese</td>
-                                    <td>Utenti illimitati, server dedicato</td>
+                                    <td><strong>Dedicato</strong></td>
+                                    <td>€100/mese</td>
+                                    <td>Utenti illimitati, server dedicato, backup ridondanti</td>
                                 </tr>
                             </tbody>
                         </table>
