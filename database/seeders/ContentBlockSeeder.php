@@ -46,7 +46,7 @@ class ContentBlockSeeder extends Seeder
             [
                 'key' => 'solution_content',
                 'title' => 'Contenuto Sezione Soluzione',
-                'content' => 'Un gestionale su misura risolve i tuoi problemi specifici. Multiutente, sicuro, con automazioni complete. Niente funzioni inutili che paghi ma non usi.',
+                'content' => 'Un gestionale su misura risolve i tuoi problemi specifici. Multiutente, con automazioni complete e niente funzioni inutili che paghi ma non usi. Gira nel cloud, accessibile ovunque, e la sicurezza dei tuoi dati è la nostra priorità.',
                 'is_active' => true,
             ],
             [

@@ -72,8 +72,16 @@
                         {{ \App\Models\ContentBlock::getContent('solution_title', 'La Soluzione Personalizzata') }}
                     </h3>
                     <p class="text-muted">
-                        {{ \App\Models\ContentBlock::getContent('solution_content', 'Un gestionale su misura risolve i tuoi problemi specifici. Multiutente, sicuro, con automazioni complete. Niente funzioni inutili che paghi ma non usi.') }}
+                        {{ \App\Models\ContentBlock::getContent('solution_content', 'Un gestionale su misura risolve i tuoi problemi specifici. Multiutente, con automazioni complete e niente funzioni inutili che paghi ma non usi. Gira nel cloud, accessibile ovunque, e la sicurezza dei tuoi dati è la nostra priorità.') }}
                     </p>
+                    <ul class="list-unstyled text-start d-inline-block small mb-0">
+                        <li class="mb-1"><i class="fas fa-cloud text-success me-2"></i>Server cloud sempre disponibili</li>
+                        <li class="mb-1"><i class="fas fa-database text-success me-2"></i>Backup automatici giornalieri</li>
+                        <li class="mb-1"><i class="fas fa-shield-alt text-success me-2"></i>Firewall e protezione antivirus/antimalware</li>
+                        <li class="mb-1"><i class="fas fa-lock text-success me-2"></i>Connessione cifrata SSL</li>
+                        <li class="mb-1"><i class="fas fa-sync-alt text-success me-2"></i>Aggiornamenti di sicurezza costanti</li>
+                        <li class="mb-1"><i class="fas fa-user-shield text-success me-2"></i>Accessi con utenti, ruoli e permessi</li>
+                    </ul>
                 </div>
             </div>
 
@@ -387,30 +395,99 @@
                 </div>
 
                 <!-- Comparison -->
-                <div class="row mb-5">
-                    <div class="col-12">
-                        <div class="card border-warning">
-                            <div class="card-header bg-warning text-dark text-center">
-                                <h5 class="mb-0"><i class="fas fa-stopwatch me-2"></i>Quanto Tempo Ti Serve per Partire?</h5>
+                <div class="card border-warning shadow-custom mb-5">
+                    <div class="card-header bg-warning text-dark text-center">
+                        <h4 class="mb-0"><i class="fas fa-balance-scale me-2"></i>Confronto: Noi vs le Alternative</h4>
+                        <p class="mb-0 mt-1">Quanto tempo ti serve per partire, e quanto ti costa?</p>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive d-none d-md-block">
+                            <table class="table table-bordered align-middle text-center mb-0 small">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" style="min-width:150px"></th>
+                                        <th scope="col" class="text-danger" style="min-width:180px"><i class="fas fa-box me-1"></i>Software Standard</th>
+                                        <th scope="col" class="text-warning" style="min-width:180px"><i class="fas fa-hourglass-half me-1"></i>Sviluppo Tradizionale</th>
+                                        <th scope="col" class="bg-success text-white" style="min-width:180px"><i class="fas fa-rocket me-1"></i>Gestionale Su Misura</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="text-start">Tempo per essere operativi</th>
+                                        <td><i class="fas fa-times-circle text-danger me-1"></i>Mesi per adattare l'azienda al software</td>
+                                        <td><i class="fas fa-times-circle text-danger me-1"></i>3–6 mesi</td>
+                                        <td class="bg-success-subtle fw-semibold"><i class="fas fa-check-circle text-success me-1"></i>2–8 settimane</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start">Quando vedi il risultato</th>
+                                        <td><i class="fas fa-minus-circle text-warning me-1"></i>Subito, ma è uguale per tutti</td>
+                                        <td><i class="fas fa-times-circle text-danger me-1"></i>Solo a fine progetto</td>
+                                        <td class="bg-success-subtle fw-semibold"><i class="fas fa-check-circle text-success me-1"></i>Prototipo gratis in 48 ore</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start">Funzioni</th>
+                                        <td><i class="fas fa-times-circle text-danger me-1"></i>Generiche: paghi anche quelle che non usi</td>
+                                        <td><i class="fas fa-minus-circle text-warning me-1"></i>Su misura</td>
+                                        <td class="bg-success-subtle fw-semibold"><i class="fas fa-check-circle text-success me-1"></i>Su misura, solo quelle che usi</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start">Costo di sviluppo</th>
+                                        <td><i class="fas fa-minus-circle text-warning me-1"></i>Nessuno</td>
+                                        <td><i class="fas fa-times-circle text-danger me-1"></i>€15.000–50.000, spesso a consuntivo</td>
+                                        <td class="bg-success-subtle fw-semibold"><i class="fas fa-check-circle text-success me-1"></i>Da €2.900, prezzo fisso</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start">Costi ricorrenti</th>
+                                        <td><i class="fas fa-times-circle text-danger me-1"></i>Licenze per utente, per sempre</td>
+                                        <td><i class="fas fa-minus-circle text-warning me-1"></i>Manutenzione a parte</td>
+                                        <td class="bg-success-subtle fw-semibold"><i class="fas fa-check-circle text-success me-1"></i>Solo hosting, da €50/mese</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="text-start">Data di consegna</th>
+                                        <td><i class="fas fa-minus-circle text-warning me-1"></i>—</td>
+                                        <td><i class="fas fa-times-circle text-danger me-1"></i>Spesso slitta</td>
+                                        <td class="bg-success-subtle fw-semibold"><i class="fas fa-check-circle text-success me-1"></i>Garantita nel contratto</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- Mobile: un blocco per criterio -->
+                        <div class="d-md-none">
+                            <div class="border-bottom px-3 py-3">
+                                <div class="fw-bold mb-2">Tempo per essere operativi</div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Software standard</span><span class="text-end"><i class="fas fa-times-circle text-danger me-1"></i>Mesi per adattare l'azienda al software</span></div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Sviluppo tradizionale</span><span class="text-end"><i class="fas fa-times-circle text-danger me-1"></i>3–6 mesi</span></div>
+                                <div class="d-flex justify-content-between gap-2 small rounded bg-success-subtle px-2 py-1 fw-semibold"><span class="text-success text-nowrap">Noi</span><span class="text-end"><i class="fas fa-check-circle text-success me-1"></i>2–8 settimane</span></div>
                             </div>
-                            <div class="card-body">
-                                <div class="row text-center">
-                                    <div class="col-md-4 mb-3">
-                                        <h6 class="fw-bold text-danger">Software Standard</h6>
-                                        <p class="text-muted">Pronto subito, ma è la tua azienda<br>che deve adattarsi al software<br>Licenze per utente, per sempre</p>
-                                        <div class="fw-bold text-danger fs-4">Mesi di adattamento</div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <h6 class="fw-bold text-warning">Sviluppo Tradizionale</h6>
-                                        <p class="text-muted">Analisi, specifiche, sviluppo, test<br>€15.000–50.000<br>Vedi il risultato solo alla fine</p>
-                                        <div class="fw-bold text-warning fs-4">3–6 mesi</div>
-                                    </div>
-                                    <div class="col-md-4 mb-3">
-                                        <h6 class="fw-bold text-success">Gestionale Su Misura</h6>
-                                        <p class="text-muted">Prototipo gratis in 48 ore<br>Solo le funzioni che usi<br>Prezzo fisso, data garantita</p>
-                                        <div class="fw-bold text-success fs-4">2–8 settimane</div>
-                                    </div>
-                                </div>
+                            <div class="border-bottom px-3 py-3">
+                                <div class="fw-bold mb-2">Quando vedi il risultato</div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Software standard</span><span class="text-end"><i class="fas fa-minus-circle text-warning me-1"></i>Subito, ma è uguale per tutti</span></div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Sviluppo tradizionale</span><span class="text-end"><i class="fas fa-times-circle text-danger me-1"></i>Solo a fine progetto</span></div>
+                                <div class="d-flex justify-content-between gap-2 small rounded bg-success-subtle px-2 py-1 fw-semibold"><span class="text-success text-nowrap">Noi</span><span class="text-end"><i class="fas fa-check-circle text-success me-1"></i>Prototipo gratis in 48 ore</span></div>
+                            </div>
+                            <div class="border-bottom px-3 py-3">
+                                <div class="fw-bold mb-2">Funzioni</div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Software standard</span><span class="text-end"><i class="fas fa-times-circle text-danger me-1"></i>Generiche: paghi anche quelle che non usi</span></div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Sviluppo tradizionale</span><span class="text-end"><i class="fas fa-minus-circle text-warning me-1"></i>Su misura</span></div>
+                                <div class="d-flex justify-content-between gap-2 small rounded bg-success-subtle px-2 py-1 fw-semibold"><span class="text-success text-nowrap">Noi</span><span class="text-end"><i class="fas fa-check-circle text-success me-1"></i>Su misura, solo quelle che usi</span></div>
+                            </div>
+                            <div class="border-bottom px-3 py-3">
+                                <div class="fw-bold mb-2">Costo di sviluppo</div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Software standard</span><span class="text-end"><i class="fas fa-minus-circle text-warning me-1"></i>Nessuno</span></div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Sviluppo tradizionale</span><span class="text-end"><i class="fas fa-times-circle text-danger me-1"></i>€15.000–50.000, spesso a consuntivo</span></div>
+                                <div class="d-flex justify-content-between gap-2 small rounded bg-success-subtle px-2 py-1 fw-semibold"><span class="text-success text-nowrap">Noi</span><span class="text-end"><i class="fas fa-check-circle text-success me-1"></i>Da €2.900, prezzo fisso</span></div>
+                            </div>
+                            <div class="border-bottom px-3 py-3">
+                                <div class="fw-bold mb-2">Costi ricorrenti</div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Software standard</span><span class="text-end"><i class="fas fa-times-circle text-danger me-1"></i>Licenze per utente, per sempre</span></div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Sviluppo tradizionale</span><span class="text-end"><i class="fas fa-minus-circle text-warning me-1"></i>Manutenzione a parte</span></div>
+                                <div class="d-flex justify-content-between gap-2 small rounded bg-success-subtle px-2 py-1 fw-semibold"><span class="text-success text-nowrap">Noi</span><span class="text-end"><i class="fas fa-check-circle text-success me-1"></i>Solo hosting, da €50/mese</span></div>
+                            </div>
+                            <div class="border-bottom px-3 py-3">
+                                <div class="fw-bold mb-2">Data di consegna</div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Software standard</span><span class="text-end"><i class="fas fa-minus-circle text-warning me-1"></i>—</span></div>
+                                <div class="d-flex justify-content-between gap-2 small mb-1"><span class="text-muted text-nowrap">Sviluppo tradizionale</span><span class="text-end"><i class="fas fa-times-circle text-danger me-1"></i>Spesso slitta</span></div>
+                                <div class="d-flex justify-content-between gap-2 small rounded bg-success-subtle px-2 py-1 fw-semibold"><span class="text-success text-nowrap">Noi</span><span class="text-end"><i class="fas fa-check-circle text-success me-1"></i>Garantita nel contratto</span></div>
                             </div>
                         </div>
                     </div>
