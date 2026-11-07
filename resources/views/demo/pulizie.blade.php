@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Demo Gestionale Pulizie')
+@section('title', 'Demo Gestionale Imprese di Pulizie | Gestionale Su Misura')
+@section('description', 'Prova gratis il gestionale per imprese di pulizie: clienti e sedi, pianificazione degli interventi, operatori, inventario materiali e report.')
 
 @section('content')
 <div class="container py-5">

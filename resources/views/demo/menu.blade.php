@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Demo Menu Ristorante')
+@section('title', 'Demo Menu Digitale QR Code per Ristoranti | Gestionale Su Misura')
+@section('description', 'Prova gratis il menu digitale con QR code per ristoranti e pizzerie: carichi il menu, stampi il QR per i tavoli e i clienti lo aprono dal telefono.')
 
 @section('content')
 <div class="container py-5">

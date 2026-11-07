@@ -37,3 +37,28 @@ Route::get('/demo/officina', function () {
 Route::get('/privacy', [LegalController::class, 'privacy'])->name('privacy');
 Route::get('/cookies', [LegalController::class, 'cookies'])->name('cookies');
 Route::get('/terms', [LegalController::class, 'terms'])->name('terms');
+
+// Sitemap per i motori di ricerca
+Route::get('/sitemap.xml', function () {
+    $base = rtrim(config('app.url'), '/');
+    $pages = [
+        ['/', '1.0', 'weekly'],
+        ['/demo/pulizie', '0.8', 'monthly'],
+        ['/demo/task', '0.8', 'monthly'],
+        ['/demo/menu', '0.8', 'monthly'],
+        ['/demo/bandi', '0.8', 'monthly'],
+        ['/demo/officina', '0.8', 'monthly'],
+        ['/privacy', '0.2', 'yearly'],
+        ['/cookies', '0.2', 'yearly'],
+        ['/terms', '0.2', 'yearly'],
+    ];
+
+    $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n"
+        . '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
+    foreach ($pages as [$path, $priority, $freq]) {
+        $xml .= "  <url><loc>{$base}{$path}</loc><changefreq>{$freq}</changefreq><priority>{$priority}</priority></url>\n";
+    }
+    $xml .= '</urlset>' . "\n";
+
+    return response($xml, 200, ['Content-Type' => 'application/xml; charset=UTF-8']);
+})->name('sitemap');

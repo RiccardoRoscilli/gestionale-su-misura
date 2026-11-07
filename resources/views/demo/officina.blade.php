@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Demo Gestionale Officina')
+@section('title', 'Demo Gestionale Officina e Carrozzeria | Gestionale Su Misura')
+@section('description', 'Prova gratis il gestionale per officine, carrozzerie e gommisti: registro veicoli con QR code, storico condiviso e preventivi in PDF.')
 
 @section('content')
 <div class="container py-5">

@@ -11,6 +11,8 @@
     <meta name="description" content="@yield('description', 'Software gestionale personalizzato per PMI. Sviluppo rapido con AI.')">
     <meta name="keywords" content="@yield('keywords', 'gestionale, software personalizzato, PMI, AI, automazione, Excel')">
     <meta name="author" content="Gestionale Su Misura">
+    @php($canonical = rtrim(config('app.url'), '/') . (request()->path() === '/' ? '/' : '/' . request()->path()))
+    <link rel="canonical" href="{{ $canonical }}">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="@yield('og_title', 'Gestionale Su Misura: il tuo gestionale in 2–8 settimane')">
@@ -20,7 +22,7 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="it_IT">
-    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:url" content="{{ $canonical }}">
     <meta property="og:image" content="@yield('og_image', asset('images/og-image.jpg'))">
     
     <!-- Twitter Card Meta Tags -->

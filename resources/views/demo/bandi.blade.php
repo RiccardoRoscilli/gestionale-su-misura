@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Demo Gestionale Bandi')
+@section('title', 'Demo Gestionale Bandi e Contributi | Gestionale Su Misura')
+@section('description', 'Prova gratis il gestionale per bandi e contributi: bandi, beneficiari, risorse assegnate, piano finanziario e stanziamenti in un unico software.')
 
 @section('content')
 <div class="container py-5">

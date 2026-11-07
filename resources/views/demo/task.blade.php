@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Demo Gestione Task')
+@section('title', 'Demo Gestione Attività e Ticket | Gestionale Su Misura')
+@section('description', 'Prova gratis il gestionale per richieste e progetti: workflow delle richieste, assegnazione al team, ore lavorate, chat interna e fatturazione.')
 
 @section('content')
 <div class="container py-5">
