@@ -171,8 +171,6 @@
                 </div>
             </div>
 
-            {{-- Demo Menu Ristorante e Bandi nascoste finché le app demo non sono online --}}
-            {{--
             <!-- Demo Menu Ristorante -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card demo-card h-100">
@@ -200,6 +198,8 @@
                 </div>
             </div>
 
+            {{-- Demo Bandi nascosta finché l'app demo non è online --}}
+            {{--
             <!-- Demo Bandi -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card demo-card h-100">

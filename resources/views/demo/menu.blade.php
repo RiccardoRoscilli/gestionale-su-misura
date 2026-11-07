@@ -92,6 +92,11 @@
                         <p class="mb-2">
                             <strong>Accesso pubblico:</strong> Scansiona il QR code per visualizzare il menu
                         </p>
+                        <p class="mb-2">
+                            <a href="https://menu-demo.gestionale-su-misura.com/m/trattoria-da-gino-demo" target="_blank" class="link-warning fw-semibold">
+                                <i class="fas fa-eye me-1"></i>Guarda un menu di esempio come lo vede il cliente
+                            </a>
+                        </p>
                         <small class="text-muted">Nessuna registrazione richiesta - basta scansionare il QR code con la fotocamera dello smartphone</small>
                     </div>
                 </div>
