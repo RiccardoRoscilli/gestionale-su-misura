@@ -1,80 +1,66 @@
-@if(config('app.env') === 'production')
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+@php
+    $gaId = config('services.tracking.ga_measurement_id');
+    $pixelId = config('services.tracking.meta_pixel_id');
+@endphp
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_MEASUREMENT_ID');
-</script>
+    // I tracker vengono caricati solo dopo il consenso cookie (vedi cookie-consent).
+    window.trackingConfig = { gaId: @json($gaId), pixelId: @json($pixelId) };
 
-<!-- Google Tag Manager -->
-<script>
-    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');
-</script>
+    window.loadTracking = function () {
+        if (window.trackingLoaded) return;
+        window.trackingLoaded = true;
+        var cfg = window.trackingConfig;
 
-<!-- Hotjar Tracking Code -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:HOTJAR_ID,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-@endif
+        // Google Analytics 4
+        if (cfg.gaId) {
+            var ga = document.createElement('script');
+            ga.async = true;
+            ga.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(cfg.gaId);
+            document.head.appendChild(ga);
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () { dataLayer.push(arguments); };
+            gtag('js', new Date());
+            gtag('config', cfg.gaId);
+        }
 
-<!-- Custom Analytics Events -->
-<script>
-    // Track demo clicks
-    document.addEventListener('DOMContentLoaded', function() {
-        const demoLinks = document.querySelectorAll('[data-demo-type]');
-        demoLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                const demoType = this.getAttribute('data-demo-type');
-                
-                // Google Analytics event
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'demo_click', {
-                        'demo_type': demoType,
-                        'event_category': 'engagement',
-                        'event_label': demoType
-                    });
+        // Meta Pixel
+        if (cfg.pixelId) {
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', cfg.pixelId);
+            fbq('track', 'PageView');
+        }
+    };
+
+    // Evento di conversione: richiesta demo inviata con successo
+    window.trackLead = function () {
+        if (typeof window.gtag === 'function') {
+            gtag('event', 'generate_lead', { event_category: 'lead_generation', event_label: 'demo_request' });
+        }
+        if (typeof window.fbq === 'function') {
+            fbq('track', 'Lead');
+        }
+    };
+
+    // Click sulle demo
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('[data-demo-type]').forEach(function (link) {
+            link.addEventListener('click', function () {
+                var demoType = this.getAttribute('data-demo-type');
+                if (typeof window.gtag === 'function') {
+                    gtag('event', 'demo_click', { demo_type: demoType, event_category: 'engagement' });
                 }
-                
-                // Send to our tracking endpoint
-                fetch('/api/track-demo', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-                    },
-                    body: JSON.stringify({
-                        demo_type: demoType,
-                        referrer: document.referrer,
-                        user_agent: navigator.userAgent
-                    })
-                });
+                if (typeof window.fbq === 'function') {
+                    fbq('trackCustom', 'DemoClick', { demo_type: demoType });
+                }
             });
         });
-
-        // Track form submissions
-        const leadForm = document.getElementById('lead-form');
-        if (leadForm) {
-            leadForm.addEventListener('submit', function() {
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'form_submit', {
-                        'event_category': 'lead_generation',
-                        'event_label': 'quote_request'
-                    });
-                }
-            });
-        }
     });
+
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+        window.loadTracking();
+    }
 </script>

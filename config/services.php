@@ -51,4 +51,15 @@ return [
         'timeout' => env('TASK_MANAGER_TIMEOUT', 30),
     ],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Tracking (caricato solo dopo il consenso cookie)
+    |--------------------------------------------------------------------------
+    */
+
+    'tracking' => [
+        'ga_measurement_id' => env('GA_MEASUREMENT_ID'),
+        'meta_pixel_id' => env('META_PIXEL_ID'),
+    ],
+
 ];

@@ -604,6 +604,9 @@
         .then(response => response.json())
         .then(data => {
             if (data.success) {
+                if (typeof window.trackLead === 'function') {
+                    window.trackLead();
+                }
                 // Show success message
                 this.innerHTML = `
                     <div class="alert alert-success">

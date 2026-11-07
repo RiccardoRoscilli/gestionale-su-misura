@@ -62,6 +62,7 @@
                                     <p><strong>Per migliorare l'esperienza utente</strong></p>
                                     <ul class="small">
                                         <li>Google Analytics</li>
+                                        <li>Meta Pixel (Facebook)</li>
                                         <li>Statistiche di utilizzo</li>
                                         <li>Comportamento degli utenti</li>
                                         <li>Performance del sito</li>
@@ -89,6 +90,12 @@
                                     <td>Analisi del traffico</td>
                                     <td>26 mesi</td>
                                     <td><a href="https://policies.google.com/privacy" target="_blank">Google Privacy</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Meta Pixel (Facebook)</strong></td>
+                                    <td>Misurazione e ottimizzazione delle campagne pubblicitarie</td>
+                                    <td>3 mesi</td>
+                                    <td><a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta Privacy</a></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Google Fonts</strong></td>

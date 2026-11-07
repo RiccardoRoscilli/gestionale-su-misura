@@ -9,8 +9,8 @@
                         Utilizziamo i Cookie
                     </h6>
                     <p class="mb-0">
-                        Questo sito utilizza cookie tecnici e di analisi per migliorare la tua esperienza di navigazione. 
-                        Continuando la navigazione accetti l'utilizzo dei cookie.
+                        Usiamo cookie tecnici e, solo con il tuo consenso, cookie di analisi e marketing
+                        (Google Analytics, Meta Pixel) per misurare le visite e l'efficacia delle nostre campagne.
                         <a href="{{ route('privacy') }}" class="text-white text-decoration-underline">Leggi la Privacy Policy</a> | 
                         <a href="{{ route('cookies') }}" class="text-white text-decoration-underline">Cookie Policy</a>
                     </p>
@@ -43,9 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('cookie-consent').style.display = 'block';
             document.getElementById('cookie-consent').classList.add('show');
         }, 1000);
-    } else if (cookieConsent === 'accepted') {
-        // Load analytics if cookies were accepted
-        loadAnalytics();
     }
 });
 
@@ -69,11 +66,8 @@ function hideCookieBanner() {
 }
 
 function loadAnalytics() {
-    // Load Google Analytics or other tracking scripts here
-    if (typeof gtag !== 'undefined') {
-        gtag('consent', 'update', {
-            'analytics_storage': 'granted'
-        });
+    if (typeof window.loadTracking === 'function') {
+        window.loadTracking();
     }
 }
 </script>
