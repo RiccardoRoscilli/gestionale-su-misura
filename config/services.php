@@ -45,6 +45,11 @@ return [
     |
     */
 
+    'leads' => [
+        // Indirizzo che riceve l'avviso a ogni nuova richiesta dal form
+        'notify_email' => env('LEADS_NOTIFY_EMAIL', 'info@modulioscommerce.com'),
+    ],
+
     'task_manager' => [
         'url' => env('TASK_MANAGER_URL', 'http://localhost:8001'),
         'api_key' => env('TASK_MANAGER_API_KEY'),

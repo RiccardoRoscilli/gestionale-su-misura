@@ -8,7 +8,9 @@ Route::get('/', function () {
     return view('homepage');
 })->name('home');
 
-Route::post('/leads', [LeadController::class, 'store'])->name('leads.store');
+Route::post('/leads', [LeadController::class, 'store'])
+    ->middleware('throttle:5,10') // max 5 invii ogni 10 minuti per IP
+    ->name('leads.store');
 
 // Demo pages
 Route::get('/demo/pulizie', function () {

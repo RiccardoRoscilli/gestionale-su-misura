@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Lead;
 use App\Services\TaskManagerService;
 use App\Mail\LeadSubmittedMail;
+use App\Mail\LeadNotificationMail;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
@@ -21,6 +23,16 @@ class LeadController extends Controller
 
     public function store(Request $request)
     {
+        // Anti-spam: campo trappola compilato o form inviato troppo in fretta (bot).
+        // Rispondiamo come se fosse andato tutto bene, senza salvare niente.
+        if ($this->looksLikeSpam($request)) {
+            Log::info('Lead scartato come spam', ['ip' => $request->ip()]);
+            $message = 'Richiesta inviata con successo! Ti contatteremo entro 24 ore con la tua demo personalizzata.';
+            return $request->expectsJson()
+                ? response()->json(['success' => true, 'message' => $message])
+                : redirect()->route('home')->with('success', $message);
+        }
+
         $validator = Validator::make($request->all(), Lead::rules());
 
         if ($validator->fails()) {
@@ -60,6 +72,19 @@ class LeadController extends Controller
                 Log::error('Failed to send confirmation email to lead', [
                     'lead_id' => $lead->id,
                     'email' => $lead->email,
+                    'error' => $e->getMessage()
+                ]);
+            }
+
+            // Avviso interno a noi
+            try {
+                $notify = config('services.leads.notify_email');
+                if ($notify) {
+                    Mail::to($notify)->send(new LeadNotificationMail($lead));
+                }
+            } catch (\Exception $e) {
+                Log::error('Failed to send lead notification email', [
+                    'lead_id' => $lead->id,
                     'error' => $e->getMessage()
                 ]);
             }
@@ -119,5 +144,22 @@ class LeadController extends Controller
                 ->with('error', 'Errore durante l\'invio della richiesta. Riprova più tardi.')
                 ->withInput();
         }
+    }
+
+    private function looksLikeSpam(Request $request): bool
+    {
+        // Campo nascosto: le persone non lo vedono, i bot lo compilano
+        if (filled($request->input('website'))) {
+            return true;
+        }
+
+        // Tempo di compilazione: meno di 3 secondi non è umano
+        try {
+            $startedAt = (int) Crypt::decryptString((string) $request->input('form_ts'));
+        } catch (\Throwable $e) {
+            return true;
+        }
+
+        return (time() - $startedAt) < 3;
     }
 }

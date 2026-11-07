@@ -577,6 +577,12 @@
                     <div class="card-body p-5">
                         <form id="lead-form" action="{{ route('leads.store') }}" method="POST">
                             @csrf
+                            {{-- Anti-spam: campo trappola invisibile e orario di apertura del form --}}
+                            <div style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+                                <label for="website">Lascia vuoto questo campo</label>
+                                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            <input type="hidden" name="form_ts" value="{{ \Illuminate\Support\Facades\Crypt::encryptString((string) time()) }}">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="name" class="form-label">Nome e Cognome *</label>
