@@ -38,14 +38,17 @@ Route::get('/privacy', [LegalController::class, 'privacy'])->name('privacy');
 Route::get('/cookies', [LegalController::class, 'cookies'])->name('cookies');
 Route::get('/terms', [LegalController::class, 'terms'])->name('terms');
 
-// Pagine per settore (contenuti in config/settori.php)
-foreach (array_keys(config('settori')) as $slug) {
-    Route::get('/' . $slug, fn () => view('settori.show', ['page' => config("settori.$slug")]))
+// Pagine per settore (contenuti in config/settori.php).
+// Il file è letto direttamente e non tramite config(): così una cache di
+// configurazione non ancora rigenerata dopo un deploy non blocca il sito.
+$settori = require base_path('config/settori.php');
+foreach ($settori as $slug => $page) {
+    Route::get('/' . $slug, fn () => view('settori.show', ['page' => $page]))
         ->name('settori.' . $slug);
 }
 
 // Sitemap per i motori di ricerca
-Route::get('/sitemap.xml', function () {
+Route::get('/sitemap.xml', function () use ($settori) {
     $base = rtrim(config('app.url'), '/');
     $pages = [
         ['/', '1.0', 'weekly'],
@@ -54,7 +57,7 @@ Route::get('/sitemap.xml', function () {
         ['/demo/menu', '0.8', 'monthly'],
         ['/demo/bandi', '0.8', 'monthly'],
         ['/demo/officina', '0.8', 'monthly'],
-        ...array_map(fn ($slug) => ['/' . $slug, '0.9', 'monthly'], array_keys(config('settori'))),
+        ...array_map(fn ($slug) => ['/' . $slug, '0.9', 'monthly'], array_keys($settori)),
         ['/privacy', '0.2', 'yearly'],
         ['/cookies', '0.2', 'yearly'],
         ['/terms', '0.2', 'yearly'],
