@@ -106,7 +106,7 @@
         <a href="https://wa.me/393282914852">WhatsApp: +39 328 291 4852</a></p>
         
         <p style="font-size: 12px; color: #999;">
-            Hai ricevuto questa email perché hai richiesto una demo su gestionale-su-misura.it<br>
+            Hai ricevuto questa email perché hai richiesto una demo su gestionale-su-misura.com<br>
             Se non hai fatto questa richiesta, puoi ignorare questa email.
         </p>
     </div>

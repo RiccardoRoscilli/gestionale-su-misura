@@ -25,7 +25,7 @@
                         con sede in Via Molfetta 24, 00171 Roma, P.I. 10587780585.
                     </p>
                     <p>
-                        Per contattarci: <a href="mailto:info@gestionale-su-misura.it">info@gestionale-su-misura.it</a> 
+                        Per contattarci: <a href="mailto:info@modulioscommerce.com">info@modulioscommerce.com</a> 
                         o <a href="https://wa.me/393282914852" target="_blank">WhatsApp +39 328 291 4852</a>
                     </p>
 
@@ -78,7 +78,7 @@
                     </ul>
                     <p>
                         Per esercitare i tuoi diritti, contattaci a: 
-                        <a href="mailto:info@gestionale-su-misura.it">info@gestionale-su-misura.it</a>
+                        <a href="mailto:info@modulioscommerce.com">info@modulioscommerce.com</a>
                     </p>
 
                     <h2 class="h4 mb-3 mt-4">7. Sicurezza</h2>

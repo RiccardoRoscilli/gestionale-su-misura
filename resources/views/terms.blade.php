@@ -170,7 +170,7 @@
                         <h5><i class="fas fa-phone me-2"></i>Hai domande?</h5>
                         <p class="mb-2">Contattaci per qualsiasi chiarimento sui nostri Termini di Servizio:</p>
                         <ul class="mb-0">
-                            <li><strong>Email:</strong> <a href="mailto:info@gestionale-su-misura.it">info@gestionale-su-misura.it</a></li>
+                            <li><strong>Email:</strong> <a href="mailto:info@modulioscommerce.com">info@modulioscommerce.com</a></li>
                             <li><strong>WhatsApp:</strong> <a href="https://wa.me/393282914852" target="_blank">+39 328 291 4852</a></li>
                             <li><strong>Indirizzo:</strong> Via Molfetta 24, 00171 Roma</li>
                         </ul>

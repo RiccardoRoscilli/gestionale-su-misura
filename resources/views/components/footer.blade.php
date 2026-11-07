@@ -15,7 +15,7 @@
                     <a href="https://wa.me/393282914852" target="_blank" class="text-light-emphasis" title="WhatsApp">
                         <i class="fab fa-whatsapp fa-lg"></i>
                     </a>
-                    <a href="mailto:info@gestionale-su-misura.it" class="text-light-emphasis" title="Email">
+                    <a href="mailto:info@modulioscommerce.com" class="text-light-emphasis" title="Email">
                         <i class="fas fa-envelope fa-lg"></i>
                     </a>
                 </div>
@@ -65,8 +65,8 @@
                     </p>
                     <p class="mb-0">
                         <i class="fas fa-envelope me-2"></i>
-                        <a href="mailto:info@gestionale-su-misura.it" class="text-light-emphasis text-decoration-none">
-                            info@gestionale-su-misura.it
+                        <a href="mailto:info@modulioscommerce.com" class="text-light-emphasis text-decoration-none">
+                            info@modulioscommerce.com
                         </a>
                     </p>
                 </div>

@@ -33,7 +33,7 @@
     "@type": "ContactPoint",
     "telephone": "+39-340-123-4567",
     "contactType": "customer service",
-    "email": "info@gestionale-su-misura.it"
+    "email": "info@modulioscommerce.com"
   },
   "sameAs": [
     "https://www.linkedin.com/company/gestionale-su-misura",
