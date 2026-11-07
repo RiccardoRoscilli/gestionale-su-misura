@@ -5,6 +5,15 @@
 
     RewriteEngine On
 
+    # Redirect canonico verso https://www.gestionale-su-misura.com (solo produzione)
+    RewriteCond %{HTTP_HOST} ^gestionale-su-misura\.com$ [NC]
+    RewriteRule ^ https://www.gestionale-su-misura.com%{REQUEST_URI} [L,R=301]
+
+    RewriteCond %{HTTP_HOST} ^www\.gestionale-su-misura\.com$ [NC]
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https
+    RewriteRule ^ https://www.gestionale-su-misura.com%{REQUEST_URI} [L,R=301]
+
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]

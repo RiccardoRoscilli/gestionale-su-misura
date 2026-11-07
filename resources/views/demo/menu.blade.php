@@ -99,7 +99,7 @@
 
             <!-- Pulsante Accesso Demo -->
             <div class="text-center">
-                <a href="https://menu-demo.gestionale-su-misura.it" 
+                <a href="https://menu-demo.gestionale-su-misura.com" 
                    target="_blank" 
                    class="btn btn-warning btn-lg px-5 py-3">
                     <i class="fas fa-external-link-alt me-2"></i>
