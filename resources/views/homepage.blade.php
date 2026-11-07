@@ -250,8 +250,48 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Elimina Code (software gratuito) -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card demo-card h-100">
+                    <div class="demo-image" style="background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);"></div>
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Gratuito</span>
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-ticket-alt me-2 text-primary"></i>
+                            Elimina Code Digitale
+                        </h5>
+                        <p class="card-text">
+                            I clienti prendono il numero dal telefono con un QR code e ricevono una notifica quando tocca a loro.
+                        </p>
+                        <ul class="list-unstyled small text-muted mb-3">
+                            <li><i class="fas fa-check text-success me-1"></i> QR code da stampare</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Tempo di attesa stimato</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Notifiche sul telefono</li>
+                        </ul>
+                        <a href="{{ route('settori.elimina-code-digitale') }}"
+                           class="btn btn-primary w-100">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Scopri Elimina Code
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         
+        <!-- Soluzioni per settore -->
+        <div class="text-center mt-2 mb-2">
+            <p class="text-muted mb-2">Approfondisci per settore:</p>
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+                <a class="btn btn-sm btn-outline-secondary" href="{{ route('settori.gestionale-imprese-di-pulizie') }}">Imprese di pulizie</a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ route('settori.gestionale-officina') }}">Officine e carrozzerie</a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ route('settori.menu-digitale-qr-code') }}">Ristoranti</a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ route('settori.gestionale-bandi-contributi') }}">Bandi e contributi</a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ route('settori.gestionale-richieste-clienti') }}">Richieste e ticket</a>
+                <a class="btn btn-sm btn-outline-secondary" href="{{ route('settori.elimina-code-digitale') }}">Elimina code</a>
+            </div>
+        </div>
+
         <!-- Demo Access Info -->
         <div class="row mt-4">
             <div class="col-12">

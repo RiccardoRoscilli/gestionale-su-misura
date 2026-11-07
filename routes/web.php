@@ -38,6 +38,12 @@ Route::get('/privacy', [LegalController::class, 'privacy'])->name('privacy');
 Route::get('/cookies', [LegalController::class, 'cookies'])->name('cookies');
 Route::get('/terms', [LegalController::class, 'terms'])->name('terms');
 
+// Pagine per settore (contenuti in config/settori.php)
+foreach (array_keys(config('settori')) as $slug) {
+    Route::get('/' . $slug, fn () => view('settori.show', ['page' => config("settori.$slug")]))
+        ->name('settori.' . $slug);
+}
+
 // Sitemap per i motori di ricerca
 Route::get('/sitemap.xml', function () {
     $base = rtrim(config('app.url'), '/');
@@ -48,6 +54,7 @@ Route::get('/sitemap.xml', function () {
         ['/demo/menu', '0.8', 'monthly'],
         ['/demo/bandi', '0.8', 'monthly'],
         ['/demo/officina', '0.8', 'monthly'],
+        ...array_map(fn ($slug) => ['/' . $slug, '0.9', 'monthly'], array_keys(config('settori'))),
         ['/privacy', '0.2', 'yearly'],
         ['/cookies', '0.2', 'yearly'],
         ['/terms', '0.2', 'yearly'],

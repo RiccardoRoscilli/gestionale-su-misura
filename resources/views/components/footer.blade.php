@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <!-- Company Info -->
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-3 mb-4">
                 <h5 class="fw-bold mb-3">
                     <i class="fas fa-cogs me-2"></i>
                     Gestionale Su Misura
@@ -31,6 +31,19 @@
                 </ul>
             </div>
 
+            <!-- Settori -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <h6 class="fw-bold mb-3">Settori</h6>
+                <ul class="list-unstyled">
+                    <li><a href="{{ route('settori.gestionale-imprese-di-pulizie') }}" class="text-light-emphasis text-decoration-none">Imprese di pulizie</a></li>
+                    <li><a href="{{ route('settori.gestionale-officina') }}" class="text-light-emphasis text-decoration-none">Officine</a></li>
+                    <li><a href="{{ route('settori.menu-digitale-qr-code') }}" class="text-light-emphasis text-decoration-none">Menu QR ristoranti</a></li>
+                    <li><a href="{{ route('settori.gestionale-bandi-contributi') }}" class="text-light-emphasis text-decoration-none">Bandi e contributi</a></li>
+                    <li><a href="{{ route('settori.gestionale-richieste-clienti') }}" class="text-light-emphasis text-decoration-none">Richieste e ticket</a></li>
+                    <li><a href="{{ route('settori.elimina-code-digitale') }}" class="text-light-emphasis text-decoration-none">Elimina code gratuito</a></li>
+                </ul>
+            </div>
+
             <!-- Legal -->
             <div class="col-lg-2 col-md-6 mb-4">
                 <h6 class="fw-bold mb-3">Legale</h6>
@@ -42,7 +55,7 @@
             </div>
 
             <!-- Contact Info -->
-            <div class="col-lg-4 mb-4">
+            <div class="col-lg-3 mb-4">
                 <h6 class="fw-bold mb-3">Contatti</h6>
                 <div class="contact-info">
                     <p class="mb-2 text-light-emphasis">
