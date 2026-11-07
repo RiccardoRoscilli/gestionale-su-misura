@@ -69,11 +69,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <strong>Email:</strong>
-                                <code class="ms-2">admin@pulizie.com</code>
+                                <code class="ms-2">admin@demo.it</code>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <strong>Password:</strong>
-                                <code class="ms-2">password</code>
+                                <code class="ms-2">demo123</code>
                             </div>
                         </div>
                         <small class="text-muted">Accesso completo a tutte le funzionalità</small>
@@ -88,11 +88,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <strong>Email:</strong>
-                                <code class="ms-2">coordinatore@pulizie.com</code>
+                                <code class="ms-2">coordinatore@demo.it</code>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <strong>Password:</strong>
-                                <code class="ms-2">password</code>
+                                <code class="ms-2">demo123</code>
                             </div>
                         </div>
                         <small class="text-muted">Gestione interventi e operatori</small>
@@ -107,11 +107,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <strong>Email:</strong>
-                                <code class="ms-2">operatore@pulizie.com</code>
+                                <code class="ms-2">operatore@demo.it</code>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <strong>Password:</strong>
-                                <code class="ms-2">password</code>
+                                <code class="ms-2">demo123</code>
                             </div>
                         </div>
                         <small class="text-muted">Visualizzazione e gestione dei propri interventi</small>

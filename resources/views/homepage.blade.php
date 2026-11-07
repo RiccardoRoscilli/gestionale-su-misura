@@ -263,8 +263,8 @@
                                 Accesso Facilitato alle Demo
                             </h5>
                             <p class="mb-0">
-                                Le credenziali di ogni demo sono indicate nella sua pagina "Scopri la Demo".
-                                Per la maggior parte delle demo bastano quelle qui accanto.
+                                Tutte le demo usano le stesse credenziali per un accesso rapido.
+                                Nella pagina "Scopri la Demo" trovi anche gli account per gli altri ruoli.
                             </p>
                         </div>
                         <div class="col-md-4 text-md-end">

@@ -73,11 +73,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <strong>Email:</strong>
-                                <code class="ms-2">admin@officina1.com</code>
+                                <code class="ms-2">admin@demo.it</code>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <strong>Password:</strong>
-                                <code class="ms-2">password</code>
+                                <code class="ms-2">demo123</code>
                             </div>
                         </div>
                         <small class="text-muted">Gestione completa di veicoli, preventivi e utenti dell'officina</small>
@@ -92,11 +92,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <strong>Email:</strong>
-                                <code class="ms-2">coordinator@officinamoto.com</code>
+                                <code class="ms-2">coordinatore@demo.it</code>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <strong>Password:</strong>
-                                <code class="ms-2">password</code>
+                                <code class="ms-2">demo123</code>
                             </div>
                         </div>
                         <small class="text-muted">Coordina veicoli e preventivi dell'officina moto</small>
@@ -111,11 +111,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <strong>Email:</strong>
-                                <code class="ms-2">operator@agenziapraticheauto.com</code>
+                                <code class="ms-2">operatore@demo.it</code>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <strong>Password:</strong>
-                                <code class="ms-2">password</code>
+                                <code class="ms-2">demo123</code>
                             </div>
                         </div>
                         <small class="text-muted">Registra veicoli e consulta le schede</small>
