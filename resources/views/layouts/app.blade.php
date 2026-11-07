@@ -13,16 +13,20 @@
     <meta name="author" content="Gestionale Su Misura">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="@yield('og_title', config('app.name'))">
-    <meta property="og:description" content="@yield('og_description', 'Software gestionale personalizzato per PMI')">
+    <meta property="og:title" content="@yield('og_title', 'Gestionale Su Misura: il tuo gestionale in 2–8 settimane')">
+    <meta property="og:description" content="@yield('og_description', 'Software gestionale su misura per PMI: prezzo fisso, prototipo in 48 ore, nel cloud con backup e sicurezza gestiti.')">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Gestionale Su Misura">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="it_IT">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="@yield('og_image', asset('images/og-image.jpg'))">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('twitter_title', config('app.name'))">
-    <meta name="twitter:description" content="@yield('twitter_description', 'Software gestionale personalizzato per PMI')">
+    <meta name="twitter:title" content="@yield('twitter_title', 'Gestionale Su Misura: il tuo gestionale in 2–8 settimane')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'Software gestionale su misura per PMI: prezzo fisso, prototipo in 48 ore, nel cloud con backup e sicurezza gestiti.')">
     <meta name="twitter:image" content="@yield('twitter_image', asset('images/og-image.jpg'))">
 
     <!-- Fonts -->
