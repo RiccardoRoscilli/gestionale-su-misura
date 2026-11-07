@@ -381,9 +381,43 @@
                 <div class="card shadow-custom mb-5">
                     <div class="card-header bg-info text-white text-center">
                         <h4 class="mb-0"><i class="fas fa-server me-2"></i>Hosting (Mensile)</h4>
-                        <p class="mb-0 mt-2">Separato dallo sviluppo: paghi solo le risorse che servono al tuo gestionale</p>
+                        <p class="mb-0 mt-2">Separato dallo sviluppo: paghi solo le risorse che servono al tuo gestionale. Ogni piano include tutto quello del precedente.</p>
                     </div>
                     <div class="card-body">
+                        <!-- Incluso in tutti i piani -->
+                        <div class="rounded-3 border border-info bg-info-subtle p-3 p-md-4 mb-4">
+                            <h5 class="fw-bold text-center mb-3">
+                                <i class="fas fa-shield-alt text-info me-2"></i>Incluso in tutti i piani: cloud sicuro e gestito da noi
+                            </h5>
+                            <div class="row g-3 text-center">
+                                <div class="col-6 col-md">
+                                    <i class="fas fa-cloud fa-2x text-info mb-2"></i>
+                                    <div class="fw-semibold">Cloud</div>
+                                    <small class="text-muted">Sempre online, accessibile ovunque</small>
+                                </div>
+                                <div class="col-6 col-md">
+                                    <i class="fas fa-database fa-2x text-info mb-2"></i>
+                                    <div class="fw-semibold">Backup giornalieri</div>
+                                    <small class="text-muted">Dati salvati ogni giorno e ripristinabili</small>
+                                </div>
+                                <div class="col-6 col-md">
+                                    <i class="fas fa-user-shield fa-2x text-info mb-2"></i>
+                                    <div class="fw-semibold">Sicurezza gestita</div>
+                                    <small class="text-muted">Firewall, antivirus e SSL configurati da noi</small>
+                                </div>
+                                <div class="col-6 col-md">
+                                    <i class="fas fa-sync-alt fa-2x text-info mb-2"></i>
+                                    <div class="fw-semibold">Aggiornamenti continui</div>
+                                    <small class="text-muted">Patch di sicurezza applicate senza che tu debba pensarci</small>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <i class="fas fa-robot fa-2x text-info mb-2"></i>
+                                    <div class="fw-semibold">Audit di sicurezza con IA</div>
+                                    <small class="text-muted">Controlli periodici del codice e del server con l'intelligenza artificiale</small>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row text-center">
                             <div class="col-md-4 mb-3">
                                 <h5 class="fw-bold">Base</h5>
@@ -398,6 +432,7 @@
                                 <h5 class="fw-bold">Professionale</h5>
                                 <div class="price-tag fs-4 fw-bold text-primary">€75/mese</div>
                                 <ul class="list-unstyled mt-3">
+                                    <li class="fw-semibold text-info-emphasis mb-1"><i class="fas fa-layer-group me-2"></i>Tutto il piano Base, più:</li>
                                     <li><i class="fas fa-check text-success me-2"></i>Fino a 30 utenti</li>
                                     <li><i class="fas fa-check text-success me-2"></i>Storage documenti esteso</li>
                                     <li><i class="fas fa-check text-success me-2"></i>Backup multipli</li>
@@ -407,6 +442,7 @@
                                 <h5 class="fw-bold">Dedicato</h5>
                                 <div class="price-tag fs-4 fw-bold text-primary">€100/mese</div>
                                 <ul class="list-unstyled mt-3">
+                                    <li class="fw-semibold text-info-emphasis mb-1"><i class="fas fa-layer-group me-2"></i>Tutto il Professionale, più:</li>
                                     <li><i class="fas fa-check text-success me-2"></i>Utenti illimitati</li>
                                     <li><i class="fas fa-check text-success me-2"></i>Server dedicato</li>
                                     <li><i class="fas fa-check text-success me-2"></i>Backup ridondanti</li>
