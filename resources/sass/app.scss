@@ -403,3 +403,7 @@ body {
     }
   }
 }
+// Le ancore della homepage non finiscono sotto la navbar fissa
+section[id], [id="soluzione"] {
+  scroll-margin-top: 72px;
+}
