@@ -27,23 +27,27 @@
                     <ul class="list-unstyled">
                         <li class="mb-2">
                             <i class="fas fa-check text-success me-2"></i>
-                            <strong>Gestione Bandi:</strong> Crea, modifica e monitora bandi e gare pubbliche
+                            <strong>Gestione Bandi:</strong> Bandi con codice, importo, date e stato (attivo, sospeso, chiuso)
                         </li>
                         <li class="mb-2">
                             <i class="fas fa-check text-success me-2"></i>
-                            <strong>Gestione Beneficiari:</strong> Anagrafica completa dei beneficiari con dati fiscali
+                            <strong>Beneficiari:</strong> Anagrafica completa con dati fiscali, PEC e codice SDI
                         </li>
                         <li class="mb-2">
                             <i class="fas fa-check text-success me-2"></i>
-                            <strong>Assegnazione Risorse:</strong> Collega fatture e documenti ai bandi
+                            <strong>Risorse ai Beneficiari:</strong> Importi assegnati a ogni beneficiario per bando, con esportazione in PDF
                         </li>
                         <li class="mb-2">
                             <i class="fas fa-check text-success me-2"></i>
-                            <strong>Integrazione Aruba:</strong> Sincronizzazione automatica delle fatture elettroniche
+                            <strong>Piano Finanziario:</strong> Linee di finanziamento suddivise in misure e voci di spesa, con previsto e speso
                         </li>
                         <li class="mb-2">
                             <i class="fas fa-check text-success me-2"></i>
-                            <strong>Dashboard e Report:</strong> Visualizza statistiche e report sui bandi attivi
+                            <strong>Stanziamenti:</strong> Stato di ogni stanziamento: richiesto, concesso, in avanzamento, residuo
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check text-success me-2"></i>
+                            <strong>Ruoli e Permessi:</strong> Super amministratore, amministratore e utente in sola lettura
                         </li>
                     </ul>
                 </div>
@@ -69,11 +73,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <strong>Email:</strong>
-                                <code class="ms-2">admin@example.com</code>
+                                <code class="ms-2">admin@demo.it</code>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <strong>Password:</strong>
-                                <code class="ms-2">password</code>
+                                <code class="ms-2">demo123</code>
                             </div>
                         </div>
                         <small class="text-muted">Accesso completo: gestione utenti, bandi, beneficiari e configurazioni</small>
@@ -88,11 +92,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <strong>Email:</strong>
-                                <code class="ms-2">admin@bandi.com</code>
+                                <code class="ms-2">operatore@demo.it</code>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <strong>Password:</strong>
-                                <code class="ms-2">password</code>
+                                <code class="ms-2">demo123</code>
                             </div>
                         </div>
                         <small class="text-muted">Gestione bandi, beneficiari e assegnazione risorse</small>
@@ -107,11 +111,11 @@
                         <div class="row">
                             <div class="col-md-6 mb-2">
                                 <strong>Email:</strong>
-                                <code class="ms-2">user@bandi.com</code>
+                                <code class="ms-2">utente@demo.it</code>
                             </div>
                             <div class="col-md-6 mb-2">
                                 <strong>Password:</strong>
-                                <code class="ms-2">password</code>
+                                <code class="ms-2">demo123</code>
                             </div>
                         </div>
                         <small class="text-muted">Visualizzazione bandi e beneficiari con permessi limitati</small>

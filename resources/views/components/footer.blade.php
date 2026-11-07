@@ -26,7 +26,7 @@
                 <h6 class="fw-bold mb-3">Servizi</h6>
                 <ul class="list-unstyled">
                     <li><a href="{{ route('home') }}#prezzi" class="text-light-emphasis text-decoration-none">Prezzi</a></li>
-                    <li><a href="{{ route('home') }}#demo" class="text-light-emphasis text-decoration-none">Demo Gratuite</a></li>
+                    <li><a href="{{ route('home') }}#demo" class="text-light-emphasis text-decoration-none">Demo</a></li>
                     <li><a href="{{ route('home') }}#preventivo" class="text-light-emphasis text-decoration-none">Richiedi Demo</a></li>
                 </ul>
             </div>

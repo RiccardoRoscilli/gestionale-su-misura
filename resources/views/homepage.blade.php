@@ -111,7 +111,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-5">
-                <h2 class="fw-bold mb-3">Prova le Nostre Demo Gratuite</h2>
+                <h2 class="fw-bold mb-3">Prova le Nostre Demo</h2>
                 <p class="text-muted fs-5">Vedi in azione i nostri gestionali personalizzati</p>
             </div>
         </div>
@@ -198,8 +198,6 @@
                 </div>
             </div>
 
-            {{-- Demo Bandi nascosta finché l'app demo non è online --}}
-            {{--
             <!-- Demo Bandi -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card demo-card h-100">
@@ -210,12 +208,12 @@
                             Gestionale Bandi
                         </h5>
                         <p class="card-text">
-                            Sistema per gestione bandi e gare pubbliche con tracking scadenze.
+                            Per enti e consulenti: bandi, beneficiari, piano finanziario e stanziamenti.
                         </p>
                         <ul class="list-unstyled small text-muted mb-3">
-                            <li><i class="fas fa-check text-success me-1"></i> Ricerca bandi</li>
-                            <li><i class="fas fa-check text-success me-1"></i> Gestione scadenze</li>
-                            <li><i class="fas fa-check text-success me-1"></i> Tracking partecipazioni</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Bandi e beneficiari</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Misure e voci di spesa</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Report in PDF</li>
                         </ul>
                         <a href="{{ route('demo.bandi') }}" 
                            class="btn btn-info w-100"
@@ -226,8 +224,6 @@
                     </div>
                 </div>
             </div>
-            --}}
-
             <!-- Demo Officina -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card demo-card h-100">

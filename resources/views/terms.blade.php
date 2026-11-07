@@ -38,7 +38,7 @@
                     <ul>
                         <li><strong>Sviluppo Software Personalizzato:</strong> Creazione di gestionali su misura</li>
                         <li><strong>Consulenza Tecnica:</strong> Analisi delle esigenze aziendali</li>
-                        <li><strong>Demo Gratuite:</strong> Presentazione di soluzioni esistenti</li>
+                        <li><strong>Demo:</strong> Presentazione di soluzioni esistenti</li>
                         <li><strong>Hosting e Manutenzione:</strong> Servizi di hosting e supporto tecnico</li>
                     </ul>
 

@@ -25,7 +25,7 @@
                     <a class="nav-link" href="{{ route('home') }}#prezzi">Prezzi</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home') }}#demo">Demo Gratuite</a>
+                    <a class="nav-link" href="{{ route('home') }}#demo">Demo</a>
                 </li>
                 <li class="nav-item ms-2">
                     <a class="btn btn-primary btn-sm" href="{{ route('home') }}#preventivo">
