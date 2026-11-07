@@ -116,7 +116,7 @@
             </div>
         </div>
         
-        <div class="row">
+        <div class="row justify-content-center">
             <!-- Demo Pulizie -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card demo-card h-100">
@@ -171,6 +171,8 @@
                 </div>
             </div>
 
+            {{-- Demo Menu Ristorante e Bandi nascoste finché le app demo non sono online --}}
+            {{--
             <!-- Demo Menu Ristorante -->
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="card demo-card h-100">
@@ -224,6 +226,34 @@
                     </div>
                 </div>
             </div>
+            --}}
+
+            <!-- Demo Officina -->
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card demo-card h-100">
+                    <div class="demo-image" style="background: linear-gradient(135deg, #cb2d3e 0%, #ef473a 100%);"></div>
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">
+                            <i class="fas fa-car me-2 text-danger"></i>
+                            Gestionale Officina
+                        </h5>
+                        <p class="card-text">
+                            Per officine, carrozzerie e gommisti: veicoli con QR code, storico e preventivi.
+                        </p>
+                        <ul class="list-unstyled small text-muted mb-3">
+                            <li><i class="fas fa-check text-success me-1"></i> Registro veicoli</li>
+                            <li><i class="fas fa-check text-success me-1"></i> QR code per ogni mezzo</li>
+                            <li><i class="fas fa-check text-success me-1"></i> Preventivi in PDF</li>
+                        </ul>
+                        <a href="{{ route('demo.officina') }}" 
+                           class="btn btn-danger w-100"
+                           data-demo-type="officina">
+                            <i class="fas fa-info-circle me-2"></i>
+                            Scopri la Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
         
         <!-- Demo Access Info -->
@@ -237,8 +267,8 @@
                                 Accesso Facilitato alle Demo
                             </h5>
                             <p class="mb-0">
-                                Tutte le demo utilizzano le stesse credenziali per un accesso rapido. 
-                                Le credenziali sono visibili direttamente nella pagina di login di ogni demo.
+                                Le credenziali di ogni demo sono indicate nella sua pagina "Scopri la Demo".
+                                Per la maggior parte delle demo bastano quelle qui accanto.
                             </p>
                         </div>
                         <div class="col-md-4 text-md-end">

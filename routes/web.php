@@ -27,6 +27,10 @@ Route::get('/demo/bandi', function () {
     return view('demo.bandi');
 })->name('demo.bandi');
 
+Route::get('/demo/officina', function () {
+    return view('demo.officina');
+})->name('demo.officina');
+
 // Legal pages
 Route::get('/privacy', [LegalController::class, 'privacy'])->name('privacy');
 Route::get('/cookies', [LegalController::class, 'cookies'])->name('cookies');
