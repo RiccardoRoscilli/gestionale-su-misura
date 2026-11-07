@@ -118,7 +118,7 @@
         
         <div class="row justify-content-center">
             <!-- Demo Pulizie -->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card demo-card h-100">
                     <div class="demo-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
                     <div class="card-body">
@@ -145,7 +145,7 @@
             </div>
 
             <!-- Demo Gestione Task -->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card demo-card h-100">
                     <div class="demo-image" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);"></div>
                     <div class="card-body">
@@ -172,7 +172,7 @@
             </div>
 
             <!-- Demo Menu Ristorante -->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card demo-card h-100">
                     <div class="demo-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
                     <div class="card-body">
@@ -199,7 +199,7 @@
             </div>
 
             <!-- Demo Bandi -->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card demo-card h-100">
                     <div class="demo-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
                     <div class="card-body">
@@ -225,7 +225,7 @@
                 </div>
             </div>
             <!-- Demo Officina -->
-            <div class="col-lg-3 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card demo-card h-100">
                     <div class="demo-image" style="background: linear-gradient(135deg, #cb2d3e 0%, #ef473a 100%);"></div>
                     <div class="card-body">
