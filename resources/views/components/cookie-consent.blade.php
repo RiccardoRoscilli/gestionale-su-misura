@@ -10,7 +10,7 @@
                     </h6>
                     <p class="mb-0">
                         Usiamo cookie tecnici e, solo con il tuo consenso, cookie di analisi e marketing
-                        (Google Analytics, Meta Pixel) per misurare le visite e l'efficacia delle nostre campagne.
+                        (Google Analytics, Meta Pixel, ChatGPT Ads) per misurare le visite e l'efficacia delle nostre campagne.
                         <a href="{{ route('privacy') }}" class="text-white text-decoration-underline">Leggi la Privacy Policy</a> | 
                         <a href="{{ route('cookies') }}" class="text-white text-decoration-underline">Cookie Policy</a>
                     </p>

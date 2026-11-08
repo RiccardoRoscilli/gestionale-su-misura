@@ -65,6 +65,8 @@ return [
     'tracking' => [
         'ga_measurement_id' => env('GA_MEASUREMENT_ID'),
         'meta_pixel_id' => env('META_PIXEL_ID'),
+        // Pixel di ChatGPT Ads (OpenAI): l'ID non è segreto, è visibile nel codice della pagina
+        'openai_pixel_id' => env('OPENAI_ADS_PIXEL_ID', 'W8xUPjg2F8cKW2XcJZJATj'),
     ],
 
 ];

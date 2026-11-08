@@ -1,10 +1,11 @@
 @php
     $gaId = config('services.tracking.ga_measurement_id');
     $pixelId = config('services.tracking.meta_pixel_id');
+    $openaiPixelId = config('services.tracking.openai_pixel_id');
 @endphp
 <script>
     // I tracker vengono caricati solo dopo il consenso cookie (vedi cookie-consent).
-    window.trackingConfig = { gaId: @json($gaId), pixelId: @json($pixelId) };
+    window.trackingConfig = { gaId: @json($gaId), pixelId: @json($pixelId), openaiPixelId: @json($openaiPixelId), debug: @json(! app()->isProduction()) };
 
     window.loadTracking = function () {
         if (window.trackingLoaded) return;
@@ -33,6 +34,12 @@
             fbq('init', cfg.pixelId);
             fbq('track', 'PageView');
         }
+
+        // Pixel di ChatGPT Ads (OpenAI), codice base fornito da OpenAI Ads Manager
+        if (cfg.openaiPixelId) {
+            !function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;var j=d.createElement(s);j.async=1;j.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(j,f)}(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");
+            oaiq('init', { pixelId: cfg.openaiPixelId, debug: cfg.debug });
+        }
     };
 
     // Evento di conversione: richiesta demo inviata con successo
@@ -42,6 +49,9 @@
         }
         if (typeof window.fbq === 'function') {
             fbq('track', 'Lead');
+        }
+        if (typeof window.oaiq === 'function') {
+            oaiq('measure', 'lead_created', { type: 'customer_action' });
         }
     };
 

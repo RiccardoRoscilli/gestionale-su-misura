@@ -63,6 +63,7 @@
                                     <ul class="small">
                                         <li>Google Analytics</li>
                                         <li>Meta Pixel (Facebook)</li>
+                                        <li>Pixel di ChatGPT Ads (OpenAI)</li>
                                         <li>Statistiche di utilizzo</li>
                                         <li>Comportamento degli utenti</li>
                                         <li>Performance del sito</li>
@@ -96,6 +97,12 @@
                                     <td>Misurazione e ottimizzazione delle campagne pubblicitarie</td>
                                     <td>3 mesi</td>
                                     <td><a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta Privacy</a></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pixel di ChatGPT Ads (OpenAI)</strong></td>
+                                    <td>Misurazione delle campagne pubblicitarie su ChatGPT</td>
+                                    <td>Secondo l'informativa del fornitore</td>
+                                    <td><a href="https://openai.com/policies/privacy-policy/" target="_blank">OpenAI Privacy</a></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Google Fonts</strong></td>
