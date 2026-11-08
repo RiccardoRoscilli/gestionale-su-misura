@@ -40,7 +40,14 @@ class TaskManagerService
                     'phone' => $lead->phone,
                     'company' => $lead->company,
                     'description' => $lead->description,
-                    'source' => $lead->source,
+                    // Il Task Manager la mostra come "Fonte" nel ticket (max 50 caratteri)
+                    // es. "chatgpt / cpc · /gestionale-officina"
+                    'source' => $lead->utm_source
+                        ? mb_substr(implode(' · ', array_filter([
+                            trim($lead->utm_source . ' / ' . ($lead->utm_medium ?? ''), ' /'),
+                            $lead->utm_campaign,
+                        ])), 0, 50)
+                        : $lead->source,
                     'api_key' => $this->apiKey
                 ]);
 

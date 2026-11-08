@@ -687,10 +687,19 @@
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Invio in corso...';
         submitBtn.disabled = true;
         
+        // Provenienza della visita (annuncio, ricerca...), presa alla prima pagina vista
+        const formData = new FormData(this);
+        const attribution = typeof window.getAttribution === 'function' ? window.getAttribution() : {};
+        ['utm_source', 'utm_medium', 'utm_campaign'].forEach(function (field) {
+            if (attribution[field]) {
+                formData.append(field, String(attribution[field]).slice(0, 100));
+            }
+        });
+
         // Submit form via fetch
         fetch(this.action, {
             method: 'POST',
-            body: new FormData(this),
+            body: formData,
             headers: {
                 'X-Requested-With': 'XMLHttpRequest'
             }

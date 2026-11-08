@@ -60,6 +60,9 @@
     <!-- Cookie Consent -->
     @include('components.cookie-consent')
 
+    <!-- Provenienza della visita, inviata col modulo -->
+    @include('components.attribution')
+
     <!-- Scripts -->
     @stack('scripts')
     
