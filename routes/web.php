@@ -33,6 +33,24 @@ Route::get('/demo/officina', function () {
     return view('demo.officina');
 })->name('demo.officina');
 
+// Clic verso una demo, con la provenienza del visitatore (vedi components/attribution).
+Route::post('/demo/track', function (\Illuminate\Http\Request $request) {
+    $data = $request->validate([
+        'demo' => 'required|string|max:100',
+        'page' => 'nullable|string|max:100',
+        'utm_source' => 'nullable|string|max:100',
+        'utm_medium' => 'nullable|string|max:100',
+        'utm_campaign' => 'nullable|string|max:100',
+    ]);
+    \App\Models\DemoAccess::create($data + [
+        'demo_name' => $data['demo'],
+        'ip_address' => $request->ip(),
+        'user_agent' => mb_substr((string) $request->userAgent(), 0, 500),
+        'accessed_at' => now(),
+    ]);
+    return response()->noContent();
+})->middleware('throttle:30,1')->name('demo.track');
+
 // Legal pages
 Route::get('/privacy', [LegalController::class, 'privacy'])->name('privacy');
 Route::get('/cookies', [LegalController::class, 'cookies'])->name('cookies');

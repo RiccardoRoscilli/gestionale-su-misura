@@ -13,6 +13,10 @@ class DemoAccess extends Model
 
     protected $fillable = [
         'demo_name',
+        'page',
+        'utm_source',
+        'utm_medium',
+        'utm_campaign',
         'ip_address',
         'user_agent',
         'session_id',

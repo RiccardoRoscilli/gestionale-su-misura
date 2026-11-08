@@ -12,6 +12,9 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->prepend(\App\Http\Middleware\RedirectToWww::class);
+        // Statistica dei clic sulle demo: le pagine possono arrivare dalla cache
+        // con un token CSRF vecchio, e qui non c'è niente da proteggere.
+        $middleware->validateCsrfTokens(except: ['demo/track']);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

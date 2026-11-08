@@ -44,6 +44,7 @@
                                         <li>Sicurezza del sito</li>
                                         <li>Preferenze di navigazione</li>
                                         <li>Consenso cookie</li>
+                                        <li>Provenienza della visita (es. annuncio o motore di ricerca), salvata nel browser per 30 giorni e inviata solo con le richieste di contatto</li>
                                     </ul>
                                     <span class="badge bg-success">Non richiedono consenso</span>
                                 </div>
