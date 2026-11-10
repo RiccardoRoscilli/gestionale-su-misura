@@ -5,37 +5,74 @@
 @section('keywords', 'gestionale personalizzato, software PMI, AI, automazione, Excel, gestionale aziendale')
 
 @section('content')
+@push('styles')
+<style>
+    /* Prima schermata compatta: titolo, promesse dell'annuncio e modulo breve */
+    .hero-compact { padding: 48px 0 56px; }
+    .hero-compact .hero-title { font-size: 2.75rem; line-height: 1.15; }
+    .hero-compact .hero-points li { margin-bottom: .4rem; font-size: 1.05rem; }
+    .hero-compact .hero-points i { width: 1.25rem; text-align: center; opacity: .9; }
+    .hero-form-card { color: #212529; border: 0; }
+    @media (max-width: 767.98px) {
+        .hero-compact { padding: 24px 0 32px; }
+        .hero-compact .hero-title { font-size: 1.85rem; margin-bottom: .75rem; }
+        .hero-compact .hero-subtitle { font-size: 1.05rem; }
+        .hero-compact .hero-points { margin-bottom: 0 !important; }
+        .hero-compact .hero-points li { font-size: .95rem; margin-bottom: .25rem; }
+        .lead-form .card-body { padding: 1.25rem !important; }
+    }
+</style>
+@endpush
 <!-- Hero Section -->
-<section class="hero-section">
+@php($formTs = \Illuminate\Support\Facades\Crypt::encryptString((string) time()))
+<section class="hero-section hero-compact">
     <div class="container">
-        <div class="row align-items-center min-vh-100">
+        <div class="row align-items-center g-4 g-lg-5">
             <div class="col-lg-6">
-                <div class="fade-in-up">
-                    <h1 class="hero-title">
-                        {{ \App\Models\ContentBlock::getContent('hero_title', 'Sostituisci Excel con un Gestionale Su Misura') }}
-                    </h1>
-                    <p class="hero-subtitle">
-                        {{ \App\Models\ContentBlock::getContent('hero_subtitle', 'Software personalizzato per PMI. Sviluppo rapido con AI.') }}
-                    </p>
-                    <div class="d-flex flex-column flex-sm-row gap-3">
-                        <a href="#preventivo" class="btn btn-primary btn-lg">
-                            <i class="fas fa-rocket me-2"></i>
-                            Richiedi la Tua Demo
-                        </a>
-                        <a href="#demo" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-play me-2"></i>
-                            Vedi le Demo
-                        </a>
-                    </div>
-                </div>
+                <h1 class="hero-title">
+                    Il tuo gestionale su misura, a prezzo fisso
+                </h1>
+                <p class="hero-subtitle mb-3">
+                    Sostituisci Excel e fogli sparsi con un software fatto sui tuoi processi.
+                </p>
+                <ul class="hero-points list-unstyled mb-4">
+                    <li><i class="fas fa-bolt me-2"></i><strong>Prototipo gratis in 48 ore</strong>, con i tuoi dati di esempio</li>
+                    <li><i class="fas fa-file-signature me-2"></i>Prezzo e data di consegna <strong>scritti nel contratto</strong></li>
+                    <li><i class="fas fa-cloud me-2"></i>Nel cloud, con backup e sicurezza gestiti da noi</li>
+                </ul>
+                <a href="#demo" class="btn btn-outline-light d-none d-lg-inline-block">
+                    <i class="fas fa-play me-2"></i>Guarda le demo
+                </a>
             </div>
             <div class="col-lg-6">
-                <div class="text-center">
-                    <div class="p-5 rounded shadow-custom" 
-                         style="background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.2) 100%); backdrop-filter: blur(10px);">
-                        <i class="fas fa-chart-line fa-5x text-white mb-3"></i>
-                        <h4 class="text-white">Dashboard Gestionale</h4>
-                        <p class="text-white-50">Visualizza i tuoi dati in tempo reale</p>
+                <div class="card hero-form-card shadow-custom">
+                    <div class="card-body p-4">
+                        <h2 class="h5 fw-bold mb-1">Richiedi il prototipo gratuito</h2>
+                        <p class="small text-muted mb-3">Ti rispondiamo entro 24 ore. Nessun impegno.</p>
+                        <form class="js-lead-form" action="{{ route('leads.store') }}" method="POST">
+                            @csrf
+                            <div style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+                                <label for="hero-website">Lascia vuoto questo campo</label>
+                                <input type="text" id="hero-website" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            <input type="hidden" name="form_ts" value="{{ $formTs }}">
+                            <div class="mb-2">
+                                <label for="hero-name" class="visually-hidden">Nome e cognome</label>
+                                <input type="text" class="form-control" id="hero-name" name="name" placeholder="Nome e cognome" autocomplete="name" required>
+                            </div>
+                            <div class="mb-2">
+                                <label for="hero-email" class="visually-hidden">Email</label>
+                                <input type="email" class="form-control" id="hero-email" name="email" placeholder="Email" autocomplete="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="hero-description" class="visually-hidden">Cosa vuoi gestire?</label>
+                                <textarea class="form-control" id="hero-description" name="description" rows="2"
+                                          placeholder="Cosa vuoi gestire? Es. ordini, interventi, magazzino…" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 btn-lg">
+                                <i class="fas fa-rocket me-2"></i>Voglio il prototipo gratis
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -606,23 +643,23 @@
             <div class="col-lg-8">
                 <div class="text-center mb-5">
                     <h2 class="fw-bold mb-3">
-                        {{ \App\Models\ContentBlock::getContent('form_title', 'Richiedi la Tua Demo in Poche Ore') }}
+                        Richiedi il Prototipo Gratuito
                     </h2>
                     <p class="text-muted fs-5">
-                        {{ \App\Models\ContentBlock::getContent('form_subtitle', 'Descrivi le tue esigenze, riceverai una demo personalizzata in 24h') }}
+                        Raccontaci come lavori: entro 48 ore ricevi un prototipo funzionante, gratis e senza impegno
                     </p>
                 </div>
 
                 <div class="card shadow-custom">
                     <div class="card-body p-5">
-                        <form id="lead-form" action="{{ route('leads.store') }}" method="POST">
+                        <form id="lead-form" class="js-lead-form" action="{{ route('leads.store') }}" method="POST">
                             @csrf
                             {{-- Anti-spam: campo trappola invisibile e orario di apertura del form --}}
                             <div style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
                                 <label for="website">Lascia vuoto questo campo</label>
                                 <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
                             </div>
-                            <input type="hidden" name="form_ts" value="{{ \Illuminate\Support\Facades\Crypt::encryptString((string) time()) }}">
+                            <input type="hidden" name="form_ts" value="{{ $formTs }}">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="name" class="form-label">Nome e Cognome *</label>
@@ -654,7 +691,7 @@
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary btn-lg">
                                     <i class="fas fa-rocket me-2"></i>
-                                    Richiedi la Tua Demo
+                                    Richiedi il prototipo gratuito
                                 </button>
                             </div>
                         </form>
@@ -676,8 +713,8 @@
         });
     });
 
-    // Form submission handling
-    document.getElementById('lead-form').addEventListener('submit', function(e) {
+    // Invio dei moduli di contatto (quello in alto e quello in fondo alla pagina)
+    document.querySelectorAll('.js-lead-form').forEach(function (form) { form.addEventListener('submit', function(e) {
         e.preventDefault();
         
         const submitBtn = this.querySelector('button[type="submit"]');
@@ -714,7 +751,7 @@
                 this.innerHTML = `
                     <div class="alert alert-success">
                         <i class="fas fa-check-circle me-2"></i>
-                        Grazie! La tua richiesta è stata inviata. Ti contatteremo entro 24 ore con la tua demo personalizzata.
+                        Grazie! Abbiamo ricevuto la tua richiesta: ti contattiamo entro 24 ore per preparare il tuo prototipo.
                     </div>
                 `;
             } else {
@@ -727,6 +764,6 @@
             submitBtn.innerHTML = originalText;
             submitBtn.disabled = false;
         });
-    });
+    }); });
 </script>
 @endpush

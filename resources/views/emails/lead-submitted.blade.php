@@ -59,7 +59,7 @@
     <div class="content">
         <p>Ciao <strong>{{ $lead->name }}</strong>,</p>
         
-        <p>Abbiamo ricevuto la tua richiesta per una demo personalizzata del nostro gestionale su misura. Siamo entusiasti di poterti aiutare!</p>
+        <p>Abbiamo ricevuto la tua richiesta per un prototipo gratuito del tuo gestionale su misura. Siamo contenti di poterti aiutare!</p>
         
         <div class="highlight">
             <h3>📋 Dettagli della tua richiesta:</h3>
@@ -80,9 +80,9 @@
         
         <h3>⏰ Cosa succede ora?</h3>
         <ol>
-            <li><strong>Analisi (entro 2 ore):</strong> Il nostro team analizzerà le tue esigenze</li>
-            <li><strong>Demo personalizzata (entro 24h):</strong> Ti prepareremo una demo su misura</li>
-            <li><strong>Presentazione:</strong> Ti contatteremo per programmare la presentazione</li>
+            <li><strong>Primo contatto (entro 24 ore):</strong> ti scriviamo o ti chiamiamo per capire come lavori</li>
+            <li><strong>Prototipo gratuito (entro 48 ore):</strong> prepariamo una prima versione funzionante con i tuoi dati di esempio</li>
+            <li><strong>Proposta:</strong> se ti convince, ricevi prezzo fisso e data di consegna scritti nero su bianco</li>
         </ol>
         
         <div style="text-align: center;">

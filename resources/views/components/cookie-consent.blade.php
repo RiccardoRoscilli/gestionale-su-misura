@@ -1,36 +1,23 @@
-<!-- Cookie Consent Banner -->
-<div id="cookie-consent" class="cookie-consent" style="display: none;">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-8 col-md-7">
-                <div class="cookie-content">
-                    <h6 class="mb-2">
-                        <i class="fas fa-cookie-bite me-2"></i>
-                        Utilizziamo i Cookie
-                    </h6>
-                    <p class="mb-0">
-                        Usiamo cookie tecnici e, solo con il tuo consenso, cookie di analisi e marketing
-                        (Google Analytics, Meta Pixel, ChatGPT Ads) per misurare le visite e l'efficacia delle nostre campagne.
-                        <a href="{{ route('privacy') }}" class="text-white text-decoration-underline">Leggi la Privacy Policy</a> | 
-                        <a href="{{ route('cookies') }}" class="text-white text-decoration-underline">Cookie Policy</a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-5 text-end">
-                <div class="cookie-buttons">
-                    <button type="button" class="btn btn-outline-light btn-sm me-2" onclick="acceptCookies()">
-                        <i class="fas fa-check me-1"></i>
-                        Accetta
-                    </button>
-                    <button type="button" class="btn btn-light btn-sm" onclick="rejectCookies()">
-                        <i class="fas fa-times me-1"></i>
-                        Rifiuta
-                    </button>
-                </div>
-            </div>
+<!-- Cookie Consent Banner (compatto: su telefono occupa poco più di una riga) -->
+<div id="cookie-consent" class="cookie-consent cookie-compact" style="display: none;">
+    <div class="container d-flex flex-column flex-md-row align-items-md-center gap-2 gap-md-3">
+        <p class="mb-0 small flex-grow-1">
+            <i class="fas fa-cookie-bite me-1"></i>
+            Usiamo cookie tecnici e, con il tuo consenso, di analisi e marketing (Google Analytics, Meta Pixel, ChatGPT Ads).
+            <a href="{{ route('cookies') }}" class="text-white text-decoration-underline">Cookie Policy</a> ·
+            <a href="{{ route('privacy') }}" class="text-white text-decoration-underline">Privacy</a>
+        </p>
+        <div class="d-flex gap-2 flex-shrink-0">
+            <button type="button" class="btn btn-light btn-sm flex-fill" onclick="acceptCookies()">Accetta</button>
+            <button type="button" class="btn btn-outline-light btn-sm flex-fill" onclick="rejectCookies()">Rifiuta</button>
         </div>
     </div>
 </div>
+<style>
+    .cookie-consent.cookie-compact { padding: 10px 0 calc(10px + env(safe-area-inset-bottom)); }
+    .cookie-compact p { font-size: .8rem; line-height: 1.35; }
+    .cookie-compact .btn { border-radius: 20px; min-width: 96px; font-weight: 500; }
+</style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

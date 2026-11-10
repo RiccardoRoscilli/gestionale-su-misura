@@ -27,7 +27,7 @@ class LeadController extends Controller
         // Rispondiamo come se fosse andato tutto bene, senza salvare niente.
         if ($this->looksLikeSpam($request)) {
             Log::info('Lead scartato come spam', ['ip' => $request->ip()]);
-            $message = 'Richiesta inviata con successo! Ti contatteremo entro 24 ore con la tua demo personalizzata.';
+            $message = 'Richiesta inviata! Ti contattiamo entro 24 ore per preparare il tuo prototipo gratuito.';
             return $request->expectsJson()
                 ? response()->json(['success' => true, 'message' => $message])
                 : redirect()->route('home')->with('success', $message);
@@ -117,14 +117,14 @@ class LeadController extends Controller
             if ($request->expectsJson()) {
                 return response()->json([
                     'success' => true,
-                    'message' => 'Richiesta inviata con successo! Ti contatteremo entro 24 ore con la tua demo personalizzata.',
+                    'message' => 'Richiesta inviata! Ti contattiamo entro 24 ore per preparare il tuo prototipo gratuito.',
                     'lead_id' => $lead->id,
                     'ticket_created' => $ticketResult['success'] ?? false
                 ]);
             }
 
             return redirect()->route('home')
-                ->with('success', 'Richiesta inviata con successo! Ti contatteremo entro 24 ore con la tua demo personalizzata.');
+                ->with('success', 'Richiesta inviata! Ti contattiamo entro 24 ore per preparare il tuo prototipo gratuito.');
 
         } catch (\Exception $e) {
             Log::error('Error processing lead', [

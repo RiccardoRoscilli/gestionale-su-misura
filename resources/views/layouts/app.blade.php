@@ -57,6 +57,9 @@
     <!-- Footer -->
     @include('components.footer')
 
+    <!-- Barra contatti fissa su telefono -->
+    @include('components.mobile-cta')
+
     <!-- Cookie Consent -->
     @include('components.cookie-consent')
 
